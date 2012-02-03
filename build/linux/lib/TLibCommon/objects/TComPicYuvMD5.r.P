@@ -1,15 +1,15 @@
 objects/TComPicYuvMD5.r.o: \
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComPicYuvMD5.cpp \
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComPicYuv.h \
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/CommonDef.h \
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TypeDef.h \
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComRom.h \
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibCommon/../../../../source/Lib/libmd5/MD5.h \
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibCommon/../../../../source/Lib/libmd5/libmd5.h
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComPicYuvMD5.cpp :
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComPicYuv.h :
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/CommonDef.h :
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TypeDef.h :
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComRom.h :
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibCommon/../../../../source/Lib/libmd5/MD5.h :
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibCommon/../../../../source/Lib/libmd5/libmd5.h :
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComPicYuvMD5.cpp \
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComPicYuv.h \
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/CommonDef.h \
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TypeDef.h \
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComRom.h \
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibCommon/../../../../source/Lib/libmd5/MD5.h \
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibCommon/../../../../source/Lib/libmd5/libmd5.h
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComPicYuvMD5.cpp :
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComPicYuv.h :
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/CommonDef.h :
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TypeDef.h :
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComRom.h :
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibCommon/../../../../source/Lib/libmd5/MD5.h :
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibCommon/../../../../source/Lib/libmd5/libmd5.h :

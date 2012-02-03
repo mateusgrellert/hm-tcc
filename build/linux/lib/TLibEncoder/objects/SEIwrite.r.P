@@ -1,17 +1,17 @@
 objects/SEIwrite.r.o: \
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/SEIwrite.cpp \
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComBitCounter.h \
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComBitStream.h \
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/CommonDef.h \
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TypeDef.h \
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComBitStream.h \
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/SEI.h \
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/SEIwrite.h
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/SEIwrite.cpp :
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComBitCounter.h :
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComBitStream.h :
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/CommonDef.h :
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TypeDef.h :
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComBitStream.h :
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/SEI.h :
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/SEIwrite.h :
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/SEIwrite.cpp \
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComBitCounter.h \
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComBitStream.h \
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/CommonDef.h \
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TypeDef.h \
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComBitStream.h \
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/SEI.h \
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/SEIwrite.h
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/SEIwrite.cpp :
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComBitCounter.h :
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComBitStream.h :
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/CommonDef.h :
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TypeDef.h :
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComBitStream.h :
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/SEI.h :
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/SEIwrite.h :

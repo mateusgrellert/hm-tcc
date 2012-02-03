@@ -1,5 +1,5 @@
 objects/AnnexBread.r.o: \
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibDecoder/../../../../source/Lib/TLibDecoder/AnnexBread.cpp \
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibDecoder/../../../../source/Lib/TLibDecoder/AnnexBread.h
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibDecoder/../../../../source/Lib/TLibDecoder/AnnexBread.cpp :
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibDecoder/../../../../source/Lib/TLibDecoder/AnnexBread.h :
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibDecoder/../../../../source/Lib/TLibDecoder/AnnexBread.cpp \
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibDecoder/../../../../source/Lib/TLibDecoder/AnnexBread.h
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibDecoder/../../../../source/Lib/TLibDecoder/AnnexBread.cpp :
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibDecoder/../../../../source/Lib/TLibDecoder/AnnexBread.h :

@@ -1,11 +1,11 @@
 objects/TAppDecCfg.d.o: \
- /home/mateusgrellert/hm-pu-decision/build/linux/app/TAppDecoder/../../../../source/App/TAppDecoder/TAppDecCfg.cpp \
- /home/mateusgrellert/hm-pu-decision/build/linux/app/TAppDecoder/../../../../source/App/TAppDecoder/TAppDecCfg.h \
- /home/mateusgrellert/hm-pu-decision/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/CommonDef.h \
- /home/mateusgrellert/hm-pu-decision/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/TypeDef.h \
- /home/mateusgrellert/hm-pu-decision/build/linux/app/TAppDecoder/../../../../source/Lib/TAppCommon/program_options_lite.h
- /home/mateusgrellert/hm-pu-decision/build/linux/app/TAppDecoder/../../../../source/App/TAppDecoder/TAppDecCfg.cpp :
- /home/mateusgrellert/hm-pu-decision/build/linux/app/TAppDecoder/../../../../source/App/TAppDecoder/TAppDecCfg.h :
- /home/mateusgrellert/hm-pu-decision/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/CommonDef.h :
- /home/mateusgrellert/hm-pu-decision/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/TypeDef.h :
- /home/mateusgrellert/hm-pu-decision/build/linux/app/TAppDecoder/../../../../source/Lib/TAppCommon/program_options_lite.h :
+ /home/mateusgrellert/hm-tcc/build/linux/app/TAppDecoder/../../../../source/App/TAppDecoder/TAppDecCfg.cpp \
+ /home/mateusgrellert/hm-tcc/build/linux/app/TAppDecoder/../../../../source/App/TAppDecoder/TAppDecCfg.h \
+ /home/mateusgrellert/hm-tcc/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/CommonDef.h \
+ /home/mateusgrellert/hm-tcc/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/TypeDef.h \
+ /home/mateusgrellert/hm-tcc/build/linux/app/TAppDecoder/../../../../source/Lib/TAppCommon/program_options_lite.h
+ /home/mateusgrellert/hm-tcc/build/linux/app/TAppDecoder/../../../../source/App/TAppDecoder/TAppDecCfg.cpp :
+ /home/mateusgrellert/hm-tcc/build/linux/app/TAppDecoder/../../../../source/App/TAppDecoder/TAppDecCfg.h :
+ /home/mateusgrellert/hm-tcc/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/CommonDef.h :
+ /home/mateusgrellert/hm-tcc/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/TypeDef.h :
+ /home/mateusgrellert/hm-tcc/build/linux/app/TAppDecoder/../../../../source/Lib/TAppCommon/program_options_lite.h :

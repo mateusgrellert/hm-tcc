@@ -345,7 +345,7 @@ Void TAppEncTop::encode()
   TComPicYuv*       pcPicYuvOrg = new TComPicYuv;
   TComPicYuv*       pcPicYuvRec = NULL;
 
-  // FPUD: Debug Class initiated
+  // TCC: Debug Class initiated
   TComDbg::enableDbg = true;
   TComDbg::openDbgFile(m_pchDbgFile);
 

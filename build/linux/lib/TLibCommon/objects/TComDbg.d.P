@@ -1,5 +1,5 @@
 objects/TComDbg.d.o: \
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComDbg.cpp \
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComDbg.h
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComDbg.cpp :
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComDbg.h :
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComDbg.cpp \
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComDbg.h
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComDbg.cpp :
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComDbg.h :

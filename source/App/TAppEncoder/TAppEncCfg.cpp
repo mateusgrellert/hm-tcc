@@ -138,7 +138,7 @@ Bool TAppEncCfg::parseCfg( Int argc, Char* argv[] )
   string cfg_BitstreamFile;
   string cfg_ReconFile;
   string cfg_dQPFile;
-  string cfg_DbgFile; // FPUD: string that stores debug file path
+  string cfg_DbgFile; // TCC: string that stores debug file path
 #if TILES
   string cfg_ColumnWidth;
   string cfg_RowHeight;
@@ -155,7 +155,7 @@ Bool TAppEncCfg::parseCfg( Int argc, Char* argv[] )
   ("InputFile,i",     cfg_InputFile,     string(""), "original YUV input file name")
   ("BitstreamFile,b", cfg_BitstreamFile, string(""), "bitstream output file name")
   ("ReconFile,o",     cfg_ReconFile,     string(""), "reconstructed YUV output file name")
-  /* FPUD: Dbg File parsing */
+  /* TCC: Dbg File parsing */
   ("DbgFile,o",     cfg_DbgFile,     string(""), "reconstructed YUV output file name")
 #if G678_LAMBDA_ADJUSTMENT
   ("LambdaModifier0,-LM0", m_adLambdaModifier[ 0 ], ( double )1.0, "Lambda modifier for temporal layer 0")
@@ -408,7 +408,7 @@ Bool TAppEncCfg::parseCfg( Int argc, Char* argv[] )
   m_pchBitstreamFile = cfg_BitstreamFile.empty() ? NULL : strdup(cfg_BitstreamFile.c_str());
   m_pchReconFile = cfg_ReconFile.empty() ? NULL : strdup(cfg_ReconFile.c_str());
   m_pchdQPFile = cfg_dQPFile.empty() ? NULL : strdup(cfg_dQPFile.c_str());
-  m_pchDbgFile = cfg_DbgFile.empty() ? NULL : strdup(cfg_DbgFile.c_str()); // FPUD: std::string to c string
+  m_pchDbgFile = cfg_DbgFile.empty() ? NULL : strdup(cfg_DbgFile.c_str()); // TCC: std::string to c string
   
 #if TILES
   m_pchColumnWidth = cfg_ColumnWidth.empty() ? NULL: strdup(cfg_ColumnWidth.c_str());

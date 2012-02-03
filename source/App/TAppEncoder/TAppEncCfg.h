@@ -59,7 +59,7 @@ protected:
   char*     m_pchInputFile;                                   ///< source file name
   char*     m_pchBitstreamFile;                               ///< output bitstream file
   char*     m_pchReconFile;                                   ///< output reconstruction file
-  char*     m_pchDbgFile;                                     ///< FPUD: output debug file
+  char*     m_pchDbgFile;                                     ///< TCC: output debug file
 #if G678_LAMBDA_ADJUSTMENT  
   Double    m_adLambdaModifier[ MAX_TLAYER ];                 ///< Lambda modifier array for each temporal layer
 #endif

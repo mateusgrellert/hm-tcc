@@ -1,5 +1,5 @@
 objects/libmd5.d.o: \
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibCommon/../../../../source/Lib/libmd5/libmd5.c \
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibCommon/../../../../source/Lib/libmd5/libmd5.h
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibCommon/../../../../source/Lib/libmd5/libmd5.c :
- /home/mateusgrellert/hm-pu-decision/build/linux/lib/TLibCommon/../../../../source/Lib/libmd5/libmd5.h :
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibCommon/../../../../source/Lib/libmd5/libmd5.c \
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibCommon/../../../../source/Lib/libmd5/libmd5.h
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibCommon/../../../../source/Lib/libmd5/libmd5.c :
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibCommon/../../../../source/Lib/libmd5/libmd5.h :
