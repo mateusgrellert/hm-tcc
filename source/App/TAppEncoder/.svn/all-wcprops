@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/App/TAppEncoder
+END
+TAppEncCfg.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/App/TAppEncoder/TAppEncCfg.h
+END
+TAppEncTop.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/App/TAppEncoder/TAppEncTop.h
+END
+TAppEncCfg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/App/TAppEncoder/TAppEncCfg.cpp
+END
+encmain.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/App/TAppEncoder/encmain.cpp
+END
+TAppEncTop.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/App/TAppEncoder/TAppEncTop.cpp
+END

@@ -1,0 +1,1003 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="69">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <df name="linux" root=".">
+      <df name="app">
+        <df name="TAppDecoder">
+        </df>
+        <df name="TAppEncoder">
+        </df>
+      </df>
+      <df name="common">
+      </df>
+      <df name="lib">
+        <df name="TAppCommon">
+        </df>
+        <df name="TLibCommon">
+        </df>
+        <df name="TLibDecoder">
+        </df>
+        <df name="TLibEncoder">
+        </df>
+        <df name="TLibVideoIO">
+        </df>
+      </df>
+      <df name="utils">
+        <df name="annexBbytecount">
+        </df>
+        <df name="convert_NtoMbit_YCbCr">
+        </df>
+      </df>
+    </df>
+    <logicalFolder name="source" displayName="source" projectFiles="true">
+      <logicalFolder name="App" displayName="App" projectFiles="true">
+        <logicalFolder name="TAppDecoder" displayName="TAppDecoder" projectFiles="true">
+          <itemPath>../../source/App/TAppDecoder/TAppDecCfg.cpp</itemPath>
+          <itemPath>../../source/App/TAppDecoder/TAppDecCfg.h</itemPath>
+          <itemPath>../../source/App/TAppDecoder/TAppDecTop.cpp</itemPath>
+          <itemPath>../../source/App/TAppDecoder/TAppDecTop.h</itemPath>
+          <itemPath>../../source/App/TAppDecoder/decmain.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="TAppEncoder" displayName="TAppEncoder" projectFiles="true">
+          <itemPath>../../source/App/TAppEncoder/TAppEncCfg.cpp</itemPath>
+          <itemPath>../../source/App/TAppEncoder/TAppEncCfg.h</itemPath>
+          <itemPath>../../source/App/TAppEncoder/TAppEncTop.cpp</itemPath>
+          <itemPath>../../source/App/TAppEncoder/TAppEncTop.h</itemPath>
+          <itemPath>../../source/App/TAppEncoder/encmain.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="utils" displayName="utils" projectFiles="true">
+          <itemPath>../../source/App/utils/annexBbytecount.cpp</itemPath>
+          <itemPath>../../source/App/utils/convert_NtoMbit_YCbCr.cpp</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="Lib" displayName="Lib" projectFiles="true">
+        <logicalFolder name="libmd5" displayName="libmd5" projectFiles="true">
+          <itemPath>../../source/Lib/libmd5/MD5.h</itemPath>
+          <itemPath>../../source/Lib/libmd5/libmd5.c</itemPath>
+          <itemPath>../../source/Lib/libmd5/libmd5.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="TAppCommon" displayName="TAppCommon" projectFiles="true">
+          <itemPath>../../source/Lib/TAppCommon/program_options_lite.cpp</itemPath>
+          <itemPath>../../source/Lib/TAppCommon/program_options_lite.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="TLibCommon" displayName="TLibCommon" projectFiles="true">
+          <itemPath>../../source/Lib/TLibCommon/AccessUnit.h</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/CommonDef.h</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/ContextModel.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/ContextModel.h</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/ContextModel3DBuffer.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/ContextModel3DBuffer.h</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/ContextTables.h</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/NAL.h</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/SEI.h</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComAdaptiveLoopFilter.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComAdaptiveLoopFilter.h</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComBitCounter.h</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComBitStream.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComBitStream.h</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComCABACTables.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComCABACTables.h</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComDataCU.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComDataCU.h</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComInterpolationFilter.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComInterpolationFilter.h</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComList.h</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComLoopFilter.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComLoopFilter.h</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComMotionInfo.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComMotionInfo.h</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComMv.h</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComPattern.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComPattern.h</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComPic.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComPic.h</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComPicSym.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComPicSym.h</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComPicYuv.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComPicYuv.h</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComPicYuvMD5.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComPredFilter.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComPredFilter.h</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComPrediction.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComPrediction.h</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComRdCost.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComRdCost.h</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComRdCostWeightPrediction.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComRdCostWeightPrediction.h</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComRom.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComRom.h</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComSampleAdaptiveOffset.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComSampleAdaptiveOffset.h</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComSlice.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComSlice.h</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComTrQuant.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComTrQuant.h</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComWeightPrediction.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComWeightPrediction.h</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComYuv.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TComYuv.h</itemPath>
+          <itemPath>../../source/Lib/TLibCommon/TypeDef.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="TLibDecoder" displayName="TLibDecoder" projectFiles="true">
+          <itemPath>../../source/Lib/TLibDecoder/AnnexBread.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibDecoder/AnnexBread.h</itemPath>
+          <itemPath>../../source/Lib/TLibDecoder/NALread.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibDecoder/NALread.h</itemPath>
+          <itemPath>../../source/Lib/TLibDecoder/SEIread.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibDecoder/TDecBinCoder.h</itemPath>
+          <itemPath>../../source/Lib/TLibDecoder/TDecBinCoderCABAC.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibDecoder/TDecBinCoderCABAC.h</itemPath>
+          <itemPath>../../source/Lib/TLibDecoder/TDecCAVLC.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibDecoder/TDecCAVLC.h</itemPath>
+          <itemPath>../../source/Lib/TLibDecoder/TDecCu.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibDecoder/TDecCu.h</itemPath>
+          <itemPath>../../source/Lib/TLibDecoder/TDecEntropy.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibDecoder/TDecEntropy.h</itemPath>
+          <itemPath>../../source/Lib/TLibDecoder/TDecGop.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibDecoder/TDecGop.h</itemPath>
+          <itemPath>../../source/Lib/TLibDecoder/TDecSbac.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibDecoder/TDecSbac.h</itemPath>
+          <itemPath>../../source/Lib/TLibDecoder/TDecSlice.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibDecoder/TDecSlice.h</itemPath>
+          <itemPath>../../source/Lib/TLibDecoder/TDecTop.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibDecoder/TDecTop.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="TLibEncoder" displayName="TLibEncoder" projectFiles="true">
+          <itemPath>../../source/Lib/TLibEncoder/AnnexBwrite.h</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/NALwrite.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/NALwrite.h</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/SEIwrite.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/TEncAdaptiveLoopFilter.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/TEncAdaptiveLoopFilter.h</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/TEncAnalyze.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/TEncAnalyze.h</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/TEncBinCoder.h</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/TEncBinCoderCABAC.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/TEncBinCoderCABAC.h</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/TEncBinCoderCABACCounter.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/TEncBinCoderCABACCounter.h</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/TEncCavlc.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/TEncCavlc.h</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/TEncCfg.h</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/TEncCu.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/TEncCu.h</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/TEncEntropy.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/TEncEntropy.h</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/TEncGOP.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/TEncGOP.h</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/TEncPic.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/TEncPic.h</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/TEncPreanalyzer.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/TEncPreanalyzer.h</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.h</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/TEncSbac.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/TEncSbac.h</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/TEncSearch.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/TEncSearch.h</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/TEncSlice.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/TEncSlice.h</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/TEncTop.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/TEncTop.h</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/WeightPredAnalysis.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibEncoder/WeightPredAnalysis.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="TLibVideoIO" displayName="TLibVideoIO" projectFiles="true">
+          <itemPath>../../source/Lib/TLibVideoIO/TVideoIOYuv.cpp</itemPath>
+          <itemPath>../../source/Lib/TLibVideoIO/TVideoIOYuv.h</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Arquivos importantes"
+                   projectFiles="false">
+      <itemPath>Makefile-linux.mk</itemPath>
+      <itemPath>makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile-linux.mk</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>$(MAKE) -f Makefile</buildCommand>
+          <cleanCommand>$(MAKE) -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+      </makefileType>
+      <item path="../../source/App/TAppDecoder/TAppDecCfg.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib/TAppCommon</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>_LARGEFILE64_SOURCE</Elem>
+            <Elem>MSYS_UNIX_LARGEFILE</Elem>
+            <Elem>_FILE_OFFSET_BITS=64</Elem>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/App/TAppDecoder/TAppDecTop.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib/TLibDecoder</pElem>
+            <pElem>../../source/Lib/TLibVideoIO</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>_LARGEFILE64_SOURCE</Elem>
+            <Elem>MSYS_UNIX_LARGEFILE</Elem>
+            <Elem>_FILE_OFFSET_BITS=64</Elem>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/App/TAppDecoder/decmain.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib/TLibVideoIO</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>_LARGEFILE64_SOURCE</Elem>
+            <Elem>MSYS_UNIX_LARGEFILE</Elem>
+            <Elem>_FILE_OFFSET_BITS=64</Elem>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/App/TAppEncoder/TAppEncCfg.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib/TAppCommon</pElem>
+            <pElem>../../source/Lib/TLibEncoder</pElem>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>_LARGEFILE64_SOURCE</Elem>
+            <Elem>MSYS_UNIX_LARGEFILE</Elem>
+            <Elem>_FILE_OFFSET_BITS=64</Elem>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/App/TAppEncoder/TAppEncTop.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib/TLibVideoIO</pElem>
+            <pElem>../../source/Lib/TLibEncoder</pElem>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>_LARGEFILE64_SOURCE</Elem>
+            <Elem>MSYS_UNIX_LARGEFILE</Elem>
+            <Elem>_FILE_OFFSET_BITS=64</Elem>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/App/TAppEncoder/encmain.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib/TLibVideoIO</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>_LARGEFILE64_SOURCE</Elem>
+            <Elem>MSYS_UNIX_LARGEFILE</Elem>
+            <Elem>_FILE_OFFSET_BITS=64</Elem>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/App/utils/annexBbytecount.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib/TLibDecoder</pElem>
+            <pElem>utils/annexBbytecount</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>_LARGEFILE64_SOURCE</Elem>
+            <Elem>MSYS_UNIX_LARGEFILE</Elem>
+            <Elem>_FILE_OFFSET_BITS=64</Elem>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/App/utils/convert_NtoMbit_YCbCr.cpp"
+            ex="false"
+            tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib/TAppCommon</pElem>
+            <pElem>../../source/Lib/TLibVideoIO</pElem>
+            <pElem>../../source/Lib/TLibCommon</pElem>
+            <pElem>utils/convert_NtoMbit_YCbCr</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>_LARGEFILE64_SOURCE</Elem>
+            <Elem>MSYS_UNIX_LARGEFILE</Elem>
+            <Elem>_FILE_OFFSET_BITS=64</Elem>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TAppCommon/program_options_lite.cpp"
+            ex="false"
+            tool="1">
+        <ccTool>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibCommon/ContextModel.cpp" ex="false" tool="1">
+        <ccTool>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibCommon/ContextModel3DBuffer.cpp"
+            ex="false"
+            tool="1">
+        <ccTool>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibCommon/TComAdaptiveLoopFilter.cpp"
+            ex="false"
+            tool="1">
+        <ccTool>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibCommon/TComBitStream.cpp" ex="false" tool="1">
+        <ccTool>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibCommon/TComCABACTables.cpp"
+            ex="false"
+            tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibCommon/TComDataCU.cpp" ex="false" tool="1">
+        <ccTool>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibCommon/TComInterpolationFilter.cpp"
+            ex="false"
+            tool="1">
+        <ccTool>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibCommon/TComLoopFilter.cpp" ex="false" tool="1">
+        <ccTool>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibCommon/TComMotionInfo.cpp" ex="false" tool="1">
+        <ccTool>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibCommon/TComPattern.cpp" ex="false" tool="1">
+        <ccTool>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibCommon/TComPic.cpp" ex="false" tool="1">
+        <ccTool>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibCommon/TComPicSym.cpp" ex="false" tool="1">
+        <ccTool>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibCommon/TComPicYuv.cpp" ex="false" tool="1">
+        <ccTool>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibCommon/TComPicYuvMD5.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib/libmd5</pElem>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibCommon/TComPredFilter.cpp" ex="false" tool="1">
+        <ccTool>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibCommon/TComPrediction.cpp" ex="false" tool="1">
+        <ccTool>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibCommon/TComRdCost.cpp" ex="false" tool="1">
+        <ccTool>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibCommon/TComRdCostWeightPrediction.cpp"
+            ex="false"
+            tool="1">
+        <ccTool>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibCommon/TComRom.cpp" ex="false" tool="1">
+        <ccTool>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibCommon/TComSampleAdaptiveOffset.cpp"
+            ex="false"
+            tool="1">
+        <ccTool>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibCommon/TComSlice.cpp" ex="false" tool="1">
+        <ccTool>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibCommon/TComTrQuant.cpp" ex="false" tool="1">
+        <ccTool>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibCommon/TComWeightPrediction.cpp"
+            ex="false"
+            tool="1">
+        <ccTool>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibCommon/TComYuv.cpp" ex="false" tool="1">
+        <ccTool>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibDecoder/AnnexBread.cpp" ex="false" tool="1">
+        <ccTool>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibDecoder/NALread.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib/TLibCommon</pElem>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibDecoder/SEIread.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib/TLibCommon</pElem>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibDecoder/TDecBinCoderCABAC.cpp"
+            ex="false"
+            tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib/TLibCommon</pElem>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibDecoder/TDecCAVLC.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib/TLibCommon</pElem>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibDecoder/TDecCu.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib/TLibCommon</pElem>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibDecoder/TDecEntropy.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib/TLibCommon</pElem>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibDecoder/TDecGop.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib/libmd5</pElem>
+            <pElem>../../source/Lib/TLibCommon</pElem>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibDecoder/TDecSbac.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib/TLibCommon</pElem>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibDecoder/TDecSlice.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib/TLibCommon</pElem>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibDecoder/TDecTop.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib/TLibCommon</pElem>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibEncoder/NALwrite.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibEncoder/SEIwrite.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibEncoder/TEncAdaptiveLoopFilter.cpp"
+            ex="false"
+            tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibEncoder/TEncAnalyze.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibEncoder/TEncBinCoderCABAC.cpp"
+            ex="false"
+            tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibEncoder/TEncBinCoderCABACCounter.cpp"
+            ex="false"
+            tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibEncoder/TEncCavlc.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibEncoder/TEncCu.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib/TLibVideoIO</pElem>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibEncoder/TEncEntropy.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibEncoder/TEncGOP.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib/TLibVideoIO</pElem>
+            <pElem>../../source/Lib/libmd5</pElem>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibEncoder/TEncPic.cpp" ex="false" tool="1">
+        <ccTool>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibEncoder/TEncPreanalyzer.cpp"
+            ex="false"
+            tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibEncoder/TEncSampleAdaptiveOffset.cpp"
+            ex="false"
+            tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibEncoder/TEncSbac.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib/TLibVideoIO</pElem>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibEncoder/TEncSearch.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibEncoder/TEncSlice.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib/TLibVideoIO</pElem>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibEncoder/TEncTop.cpp" ex="false" tool="1">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib/TLibVideoIO</pElem>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibEncoder/WeightPredAnalysis.cpp"
+            ex="false"
+            tool="1">
+        <ccTool>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/TLibVideoIO/TVideoIOYuv.cpp" ex="false" tool="1">
+        <ccTool>
+          <preprocessorList>
+            <Elem>_LARGEFILE64_SOURCE</Elem>
+            <Elem>MSYS_UNIX_LARGEFILE</Elem>
+            <Elem>_FILE_OFFSET_BITS=64</Elem>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../../source/Lib/libmd5/libmd5.c" ex="false" tool="1">
+        <ccTool>
+          <preprocessorList>
+            <Elem>MSYS_LINUX</Elem>
+            <Elem>_DEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <folder path="source/App/TAppDecoder">
+        <ccTool>
+          <incDir>
+            <pElem>app/TAppDecoder</pElem>
+            <pElem>../../source/App/TAppDecoder</pElem>
+            <pElem>../../source/Lib/TLibCommon</pElem>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="source/App/TAppEncoder">
+        <ccTool>
+          <incDir>
+            <pElem>app/TAppEncoder</pElem>
+            <pElem>../../source/App/TAppEncoder</pElem>
+            <pElem>../../source/Lib/TLibCommon</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="source/App/utils">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/App/utils</pElem>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="source/Lib/TAppCommon">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib/TAppCommon</pElem>
+            <pElem>lib/TAppCommon</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="source/Lib/TLibCommon">
+        <ccTool>
+          <incDir>
+            <pElem>lib/TLibCommon</pElem>
+            <pElem>../../source/Lib/TLibCommon</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="source/Lib/TLibDecoder">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib/TLibDecoder</pElem>
+            <pElem>lib/TLibDecoder</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="source/Lib/TLibEncoder">
+        <ccTool>
+          <incDir>
+            <pElem>lib/TLibEncoder</pElem>
+            <pElem>../../source/Lib/TLibEncoder</pElem>
+            <pElem>../../source/Lib/TLibCommon</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="source/Lib/TLibVideoIO">
+        <ccTool>
+          <incDir>
+            <pElem>../../source/Lib/TLibVideoIO</pElem>
+            <pElem>lib/TLibVideoIO</pElem>
+            <pElem>../../source/Lib/TLibCommon</pElem>
+            <pElem>../../source/Lib</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="source/Lib/libmd5">
+        <ccTool>
+          <incDir>
+            <pElem>lib/../../../source/Lib/libmd5</pElem>
+            <pElem>../../source/Lib/libmd5</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+    </conf>
+  </confs>
+</configurationDescriptor>

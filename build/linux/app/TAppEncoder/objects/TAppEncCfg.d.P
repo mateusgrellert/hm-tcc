@@ -1,0 +1,17 @@
+objects/TAppEncCfg.d.o: \
+ /home/mateusgrellert/hm-pu-decision/build/linux/app/TAppEncoder/../../../../source/App/TAppEncoder/TAppEncCfg.cpp \
+ /home/mateusgrellert/hm-pu-decision/build/linux/app/TAppEncoder/../../../../source/Lib/TLibCommon/TComRom.h \
+ /home/mateusgrellert/hm-pu-decision/build/linux/app/TAppEncoder/../../../../source/Lib/TLibCommon/CommonDef.h \
+ /home/mateusgrellert/hm-pu-decision/build/linux/app/TAppEncoder/../../../../source/Lib/TLibCommon/TypeDef.h \
+ /home/mateusgrellert/hm-pu-decision/build/linux/app/TAppEncoder/../../../../source/App/TAppEncoder/TAppEncCfg.h \
+ /home/mateusgrellert/hm-pu-decision/build/linux/app/TAppEncoder/../../../../source/Lib/TLibCommon/CommonDef.h \
+ /home/mateusgrellert/hm-pu-decision/build/linux/app/TAppEncoder/../../../../source/Lib/TLibEncoder/TEncCfg.h \
+ /home/mateusgrellert/hm-pu-decision/build/linux/app/TAppEncoder/../../../../source/Lib/TAppCommon/program_options_lite.h
+ /home/mateusgrellert/hm-pu-decision/build/linux/app/TAppEncoder/../../../../source/App/TAppEncoder/TAppEncCfg.cpp :
+ /home/mateusgrellert/hm-pu-decision/build/linux/app/TAppEncoder/../../../../source/Lib/TLibCommon/TComRom.h :
+ /home/mateusgrellert/hm-pu-decision/build/linux/app/TAppEncoder/../../../../source/Lib/TLibCommon/CommonDef.h :
+ /home/mateusgrellert/hm-pu-decision/build/linux/app/TAppEncoder/../../../../source/Lib/TLibCommon/TypeDef.h :
+ /home/mateusgrellert/hm-pu-decision/build/linux/app/TAppEncoder/../../../../source/App/TAppEncoder/TAppEncCfg.h :
+ /home/mateusgrellert/hm-pu-decision/build/linux/app/TAppEncoder/../../../../source/Lib/TLibCommon/CommonDef.h :
+ /home/mateusgrellert/hm-pu-decision/build/linux/app/TAppEncoder/../../../../source/Lib/TLibEncoder/TEncCfg.h :
+ /home/mateusgrellert/hm-pu-decision/build/linux/app/TAppEncoder/../../../../source/Lib/TAppCommon/program_options_lite.h :

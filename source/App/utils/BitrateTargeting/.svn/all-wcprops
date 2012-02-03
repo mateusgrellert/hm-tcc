@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/App/utils/BitrateTargeting
+END
+GuessLambdaModifiers.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/App/utils/BitrateTargeting/GuessLambdaModifiers.h
+END
+GuessLambdaModifiersMain.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/App/utils/BitrateTargeting/GuessLambdaModifiersMain.cpp
+END
+QuickStartGuide.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/App/utils/BitrateTargeting/QuickStartGuide.pdf
+END
+encode.shl
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/App/utils/BitrateTargeting/encode.shl
+END
+RuntimeError.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/App/utils/BitrateTargeting/RuntimeError.h
+END
+encodeCommand.sh
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/App/utils/BitrateTargeting/encodeCommand.sh
+END
+ExtractBitrates.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/App/utils/BitrateTargeting/ExtractBitrates.cpp
+END
+GuessLambdaModifiers.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/App/utils/BitrateTargeting/GuessLambdaModifiers.cpp
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/App/utils/BitrateTargeting/makefile
+END
+targetBitrates.sh
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/App/utils/BitrateTargeting/targetBitrates.sh
+END
+ExtractBitrates.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/App/utils/BitrateTargeting/ExtractBitrates.h
+END
+ExtractBitratesMain.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/App/utils/BitrateTargeting/ExtractBitratesMain.cpp
+END

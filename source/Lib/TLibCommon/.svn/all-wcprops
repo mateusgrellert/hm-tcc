@@ -1,0 +1,341 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon
+END
+TComWeightPrediction.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComWeightPrediction.h
+END
+TComLoopFilter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComLoopFilter.cpp
+END
+TComPic.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComPic.h
+END
+TComPattern.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComPattern.h
+END
+ContextModel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/ContextModel.cpp
+END
+TComYuv.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComYuv.cpp
+END
+TComPicYuv.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComPicYuv.h
+END
+TComPicYuvMD5.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComPicYuvMD5.cpp
+END
+TComMotionInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComMotionInfo.h
+END
+TComMv.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComMv.h
+END
+TComCABACTables.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComCABACTables.h
+END
+TComBitStream.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComBitStream.cpp
+END
+NAL.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/NAL.h
+END
+TComRdCostWeightPrediction.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComRdCostWeightPrediction.h
+END
+TComInterpolationFilter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComInterpolationFilter.cpp
+END
+TComRdCost.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComRdCost.cpp
+END
+TComTrQuant.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComTrQuant.cpp
+END
+ContextTables.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/ContextTables.h
+END
+SEI.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/SEI.h
+END
+TComAdaptiveLoopFilter.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComAdaptiveLoopFilter.h
+END
+TComRom.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComRom.h
+END
+ContextModel3DBuffer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/ContextModel3DBuffer.cpp
+END
+TComPicSym.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComPicSym.cpp
+END
+TComSlice.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComSlice.h
+END
+TComPredFilter.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComPredFilter.h
+END
+TComPrediction.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComPrediction.h
+END
+TComDataCU.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComDataCU.h
+END
+TComWeightPrediction.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComWeightPrediction.cpp
+END
+TComPic.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComPic.cpp
+END
+TComSampleAdaptiveOffset.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComSampleAdaptiveOffset.h
+END
+TComPattern.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComPattern.cpp
+END
+TComPicYuv.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComPicYuv.cpp
+END
+TComList.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComList.h
+END
+TComMotionInfo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComMotionInfo.cpp
+END
+TypeDef.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TypeDef.h
+END
+AccessUnit.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/AccessUnit.h
+END
+TComBitCounter.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComBitCounter.h
+END
+TComLoopFilter.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComLoopFilter.h
+END
+TComCABACTables.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComCABACTables.cpp
+END
+ContextModel.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/ContextModel.h
+END
+TComRdCostWeightPrediction.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComRdCostWeightPrediction.cpp
+END
+TComYuv.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComYuv.h
+END
+CommonDef.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/CommonDef.h
+END
+TComAdaptiveLoopFilter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComAdaptiveLoopFilter.cpp
+END
+TComRom.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComRom.cpp
+END
+TComBitStream.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComBitStream.h
+END
+TComSlice.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComSlice.cpp
+END
+TComPredFilter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComPredFilter.cpp
+END
+TComPrediction.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComPrediction.cpp
+END
+TComDataCU.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComDataCU.cpp
+END
+TComInterpolationFilter.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComInterpolationFilter.h
+END
+TComRdCost.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComRdCost.h
+END
+TComTrQuant.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComTrQuant.h
+END
+TComSampleAdaptiveOffset.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComSampleAdaptiveOffset.cpp
+END
+ContextModel3DBuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/ContextModel3DBuffer.h
+END
+TComPicSym.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/TLibCommon/TComPicSym.h
+END

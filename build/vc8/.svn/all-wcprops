@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/build/vc8
+END
+TAppCommon_vc8.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/build/vc8/TAppCommon_vc8.vcproj
+END
+TLibDecoder_vc8.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/build/vc8/TLibDecoder_vc8.vcproj
+END
+TLibCommon_vc8.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/build/vc8/TLibCommon_vc8.vcproj
+END
+TAppEncoder_vc8.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/build/vc8/TAppEncoder_vc8.vcproj
+END
+TLibVideoIO_vc8.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/build/vc8/TLibVideoIO_vc8.vcproj
+END
+TAppDecoder_vc8.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/build/vc8/TAppDecoder_vc8.vcproj
+END
+TLibEncoder_vc8.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/build/vc8/TLibEncoder_vc8.vcproj
+END

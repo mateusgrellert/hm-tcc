@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/libmd5
+END
+libmd5.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/libmd5/libmd5.h
+END
+MD5.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/libmd5/MD5.h
+END
+libmd5.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/source/Lib/libmd5/libmd5.c
+END

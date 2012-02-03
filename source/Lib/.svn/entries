@@ -1,0 +1,46 @@
+10
+
+dir
+1829
+https://hevc.hhi.fraunhofer.de/svn/svn_HEVCSoftware/tags/HM-5.1/source/Lib
+https://hevc.hhi.fraunhofer.de/svn/svn_HEVCSoftware
+
+
+
+2012-01-20T21:28:08.767866Z
+1795
+bossen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ce97f6c2-8f86-0410-b44d-af84b13ec34f
+
+TLibDecoder
+dir
+
+TLibCommon
+dir
+
+TLibVideoIO
+dir
+
+TLibEncoder
+dir
+
+libmd5
+dir
+
+TAppCommon
+dir
+

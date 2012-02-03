@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/build/vc9
+END
+TAppCommon_vc9.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/build/vc9/TAppCommon_vc9.vcproj
+END
+TLibDecoder_vc9.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/build/vc9/TLibDecoder_vc9.vcproj
+END
+TLibCommon_vc9.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/build/vc9/TLibCommon_vc9.vcproj
+END
+TAppEncoder_vc9.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/build/vc9/TAppEncoder_vc9.vcproj
+END
+TLibVideoIO_vc9.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/build/vc9/TLibVideoIO_vc9.vcproj
+END
+TAppDecoder_vc9.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/build/vc9/TAppDecoder_vc9.vcproj
+END
+TLibEncoder_vc9.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/svn_HEVCSoftware/!svn/ver/1796/tags/HM-5.1/build/vc9/TLibEncoder_vc9.vcproj
+END

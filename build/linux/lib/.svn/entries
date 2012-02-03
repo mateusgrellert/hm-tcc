@@ -1,0 +1,43 @@
+10
+
+dir
+1829
+https://hevc.hhi.fraunhofer.de/svn/svn_HEVCSoftware/tags/HM-5.1/build/linux/lib
+https://hevc.hhi.fraunhofer.de/svn/svn_HEVCSoftware
+
+
+
+2011-12-18T18:45:08.405997Z
+1670
+bossen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ce97f6c2-8f86-0410-b44d-af84b13ec34f
+
+TLibDecoder
+dir
+
+TLibCommon
+dir
+
+TLibVideoIO
+dir
+
+TLibEncoder
+dir
+
+TAppCommon
+dir
+
