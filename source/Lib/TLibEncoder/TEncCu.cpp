@@ -1471,7 +1471,7 @@ Void TEncCu::xCheckRDCostInter(TComDataCU*& rpcBestCU, TComDataCU*& rpcTempCU, P
     if (TEncFastPUDecision::partSize == SIZE_NxN && TEncFastPUDecision::fastMode)
         xCheckBestMode(rpcBestCU, rpcTempCU, uhDepth);
 #else
-    xCheckBestMode(rpcBestCU, rpcTempCU, uiDepth);
+    xCheckBestMode(rpcBestCU, rpcTempCU, uhDepth);
 #endif
 }
 
