@@ -98,6 +98,10 @@ private:
   TEncSbac***             m_pppcRDSbacCoder;
   TEncSbac*               m_pcRDGoOnSbacCoder;
   Bool                    m_bUseSBACRD;
+  //TCC: once again the enablers
+  Bool                    m_bFastPU;
+  Bool                    m_bFastCU;
+  Bool                    m_bFastTU;
   
 public:
   /// copy parameters from encoder class

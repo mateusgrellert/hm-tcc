@@ -1,0 +1,61 @@
+
+HM software: Encoder Version [5.1][Linux][GCC 4.4.5][32 bit] 
+
+Input          File          : /home/mateusgrellert/videos/blue_sky1088p.yuv
+Bitstream      File          : str.bin
+Reconstruction File          : /home/mateusgrellert/videos/rec/blue_sky1088p_rec.yuv
+Real     Format              : 1920x1088 25Hz
+Internal Format              : 1920x1088 25Hz
+Frame index                  : 0 - 7 (8 frames)
+CU size / depth              : 64 / 4
+RQT trans. size (min / max)  : 4 / 32
+Max RQT depth inter          : 3
+Max RQT depth intra          : 3
+Min PCM size                 : 8
+Motion search range          : 64
+Intra period                 : -1
+Decoding refresh type        : 0
+QP                           : 22.00
+Max dQP signaling depth      : 0
+Chroma Qp Offset             : 0
+Chroma Qp Offset 2nd         : 0
+GOP size                     : 4
+Internal bit depth           : 8
+PCM sample bit depth         : 10
+DisableInter4x4              : 1
+
+TOOL CFG: ALF:0 IBD:0 HAD:1 SRD:1 RDQ:0 SQP:0 ASR:0 PAD:0 LComb:1 LCMod:0 FEN:1 ECU:0 CFM:0 RQT:1 MRG:1 LMC:0 Slice: G=0 M=0 EntropySlice: M=0 CIP:0 SAO:0 PCM:1 WPP:0 WPB:0 TileBoundaryIndependence:1 TileLocationInSliceHdr:0 TileMarker:1[4]  WaveFrontSynchro:0 WaveFrontFlush:0 WaveFrontSubstreams:1 ScalingList:0 TMVP:1 
+
+POC    0 TId: 0 ( I-SLICE, QP 22 )    2591784 bits [Y 37.9350 dB    U 52.1663 dB    V 49.4667 dB] [ET    44 ] [L0 ] [L1 ] [MD5:33e7e562082c341b87e1178d58828940]
+POC    1 TId: 0 ( P-SLICE, QP 25 )    2013032 bits [Y 39.0826 dB    U 44.8709 dB    V 42.5845 dB] [ET    87 ] [L0 0 ] [L1 ] [MD5:ed9d76fd77fc0a60710fa9055b6ae152]
+POC    2 TId: 0 ( P-SLICE, QP 24 )    1925456 bits [Y 39.5602 dB    U 45.7863 dB    V 43.6023 dB] [ET   117 ] [L0 1 0 ] [L1 ] [MD5:c0be3776a88f289d5a2981e04795e552]
+POC    3 TId: 0 ( P-SLICE, QP 25 )    1795816 bits [Y 39.6125 dB    U 44.6627 dB    V 42.5685 dB] [ET   138 ] [L0 2 1 0 ] [L1 ] [MD5:e51eb5b5f20b5710817e1bb308593fe5]
+POC    4 TId: 0 ( P-SLICE, QP 23 )    1963880 bits [Y 40.9487 dB    U 49.4481 dB    V 47.2308 dB] [ET   155 ] [L0 3 2 1 0 ] [L1 ] [MD5:a0a057a72067933fe8e63534577fad9e]
+POC    5 TId: 0 ( P-SLICE, QP 25 )    1806520 bits [Y 39.5914 dB    U 44.5996 dB    V 42.4825 dB] [ET   154 ] [L0 4 3 2 0 ] [L1 ] [MD5:2e1c02b10b41097d34f29f5b3f11de5f]
+POC    6 TId: 0 ( P-SLICE, QP 24 )    1884896 bits [Y 39.6003 dB    U 45.4395 dB    V 43.2450 dB] [ET   157 ] [L0 5 4 3 0 ] [L1 ] [MD5:5ab6218b9675408b90601dacde8df9ef]
+POC    7 TId: 0 ( P-SLICE, QP 25 )    1831032 bits [Y 39.3381 dB    U 44.4636 dB    V 42.3248 dB] [ET   159 ] [L0 6 5 4 0 ] [L1 ] [MD5:0f7c87f69997330339b80e584b5fdc3e]
+
+
+SUMMARY --------------------------------------------------------
+	Total Frames |  Bitrate    Y-PSNR    U-PSNR    V-PSNR 
+	        8    a  49413.8000   39.4586   46.4296   44.1881
+
+
+I Slices--------------------------------------------------------
+	Total Frames |  Bitrate    Y-PSNR    U-PSNR    V-PSNR 
+	        1    i  64794.6000   37.9350   52.1663   49.4667
+
+
+P Slices--------------------------------------------------------
+	Total Frames |  Bitrate    Y-PSNR    U-PSNR    V-PSNR 
+	        7    p  47216.5429   39.6763   45.6101   43.4340
+
+
+B Slices--------------------------------------------------------
+	Total Frames |  Bitrate    Y-PSNR    U-PSNR    V-PSNR 
+	        0    b        -nan      -nan      -nan      -nan
+
+RVM: 0.000
+Bytes written to file: 1976791 (49419.775 kbps)
+
+ Total Time:     1011.730 sec.

@@ -139,6 +139,7 @@ Bool TAppEncCfg::parseCfg( Int argc, Char* argv[] )
   string cfg_ReconFile;
   string cfg_dQPFile;
   string cfg_DbgFile; // TCC: string that stores debug file path
+ 
 #if TILES
   string cfg_ColumnWidth;
   string cfg_RowHeight;
@@ -155,8 +156,11 @@ Bool TAppEncCfg::parseCfg( Int argc, Char* argv[] )
   ("InputFile,i",     cfg_InputFile,     string(""), "original YUV input file name")
   ("BitstreamFile,b", cfg_BitstreamFile, string(""), "bitstream output file name")
   ("ReconFile,o",     cfg_ReconFile,     string(""), "reconstructed YUV output file name")
-  /* TCC: Dbg File parsing */
-  ("DbgFile,o",     cfg_DbgFile,     string(""), "reconstructed YUV output file name")
+  /* TCC: Dbg File and Fast modes parsing */
+  ("DbgFile,dbg",    cfg_DbgFile,        string(""), "Debug file path")
+  ("FastPU,dbg",     m_bFastPU,         false, "Fast PU Decision")
+  ("FastCU,dbg",     m_bFastCU,         false, "Fast CU Decision")
+  ("FastTU,dbg",     m_bFastTU,         false, "Fast TU Decision")
 #if G678_LAMBDA_ADJUSTMENT
   ("LambdaModifier0,-LM0", m_adLambdaModifier[ 0 ], ( double )1.0, "Lambda modifier for temporal layer 0")
   ("LambdaModifier1,-LM1", m_adLambdaModifier[ 1 ], ( double )1.0, "Lambda modifier for temporal layer 1")
@@ -969,6 +973,9 @@ Void TAppEncCfg::xPrintParameter()
   printf("Decoding refresh type        : %d\n", m_iDecodingRefreshType );
   printf("QP                           : %5.2f\n", m_fQP );
   printf("Max dQP signaling depth      : %d\n", m_iMaxCuDQPDepth);
+  printf("Fast PU mode                 : %d\n", m_bFastPU);
+  printf("Fast CU mode                 : %d\n", m_bFastCU);
+  printf("Fast TU mode                 : %d\n", m_bFastTU);
 
 #if G509_CHROMA_QP_OFFSET
   printf("Chroma Qp Offset             : %d\n", m_iChromaQpOffset   );

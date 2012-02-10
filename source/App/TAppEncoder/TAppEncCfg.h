@@ -71,7 +71,10 @@ protected:
   Int       m_iFrameToBeEncoded;                              ///< number of encoded frames
   Bool      m_bUsePAD;                                        ///< flag for using source padding
   Int       m_aiPad[2];                                       ///< number of padded pixels for width and height
-  
+  // TCC: Fast mode enablers
+  bool m_bFastPU;
+  bool m_bFastCU;
+  bool m_bFastTU; 
   // coding structure
   Int       m_iIntraPeriod;                                   ///< period of I-slice (random access period)
   Int       m_iDecodingRefreshType;                           ///< random access type

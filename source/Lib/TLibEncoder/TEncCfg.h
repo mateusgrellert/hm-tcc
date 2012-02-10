@@ -225,6 +225,11 @@ protected:
   Bool      m_bUseBQP;
 #endif
   Bool      m_bUseFastEnc;
+  //TCC: bool variables that enable/disable Fast modes
+  Bool      m_bFastPU;
+  Bool      m_bFastTU;
+  Bool      m_bFastCU;
+
 #if EARLY_CU_DETERMINATION
   Bool      m_bUseEarlyCU;
 #endif
@@ -518,6 +523,15 @@ public:
   Void      setUseBQP                       ( Bool  b )     { m_bUseBQP     = b; }
 #endif
   Void      setUseFastEnc                   ( Bool  b )     { m_bUseFastEnc = b; }
+  //TCC: fast mode setters/getters
+  Void      setFastPU                       ( Bool  b )     { m_bFastPU = b; }
+  Void      setFastCU                       ( Bool  b )     { m_bFastCU = b; }
+  Void      setFastTU                       ( Bool  b )     { m_bFastTU = b; }
+  
+  bool      getFastPU                       ( )     { return m_bFastPU; }
+  bool      getFastCU                       ( )     { return m_bFastCU; }
+  bool      getFastTU                       ( )     { return m_bFastTU; }
+
 #if EARLY_CU_DETERMINATION
   Void      setUseEarlyCU                   ( Bool  b )     { m_bUseEarlyCU = b; }
 #endif

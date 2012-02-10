@@ -2382,11 +2382,11 @@ Void TEncSearch::predInterSearch(TComDataCU* pcCU, TComYuv* pcOrgYuv, TComYuv*& 
                             uiCostTemp += m_pcRdCost->getCost(uiBitsTemp);
                         } else {
                             /* TCC: setting current ME step variables to Fast PU class*/
-#if FAST_PU_DECISION
-                            TEncFastPUDecision::setCU(pcCU);
-                            TEncFastPUDecision::setCurrPartIdx(iPartIdx);
-                            TEncFastPUDecision::setRefIdx(iRefIdxTemp);
-#endif
+                            if(m_pcEncCfg->getFastPU()){
+                                TEncFastPUDecision::setCU(pcCU);
+                                TEncFastPUDecision::setCurrPartIdx(iPartIdx);
+                                TEncFastPUDecision::setRefIdx(iRefIdxTemp);
+                            }
                             xMotionEstimation(pcCU, pcOrgYuv, iPartIdx, eRefPicList, &cMvPred[iRefList][iRefIdxTemp], iRefIdxTemp, cMvTemp[iRefList][iRefIdxTemp], uiBitsTemp, uiCostTemp);
                         }
                     } else {
@@ -2394,22 +2394,22 @@ Void TEncSearch::predInterSearch(TComDataCU* pcCU, TComYuv* pcOrgYuv, TComYuv*& 
                             uiCostTemp = MAX_UINT;
                             cMvTemp[1][iRefIdxTemp] = cMvTemp[0][iRefIdxTemp];
                         } else {
-                                                        /* TCC: setting current ME step variables to Fast PU class*/
-#if FAST_PU_DECISION
-                            TEncFastPUDecision::setCU(pcCU);
-                            TEncFastPUDecision::setCurrPartIdx(iPartIdx);
-                            TEncFastPUDecision::setRefIdx(iRefIdxTemp);
-#endif
+                            /* TCC: setting current ME step variables to Fast PU class*/
+                            if(m_pcEncCfg->getFastPU()){
+                                TEncFastPUDecision::setCU(pcCU);
+                                TEncFastPUDecision::setCurrPartIdx(iPartIdx);
+                                TEncFastPUDecision::setRefIdx(iRefIdxTemp);
+                            }
                             xMotionEstimation(pcCU, pcOrgYuv, iPartIdx, eRefPicList, &cMvPred[iRefList][iRefIdxTemp], iRefIdxTemp, cMvTemp[iRefList][iRefIdxTemp], uiBitsTemp, uiCostTemp);
                         }
                     }
 #else
                                                 /* TCC: setting current ME step variables to Fast PU class*/
-#if FAST_PU_DECISION
-                    TEncFastPUDecision::setCU(pcCU);
-                    TEncFastPUDecision::setCurrPartIdx(iPartIdx);
-                    TEncFastPUDecision::setRefIdx(iRefIdxTemp);
-#endif
+                    if(m_pcEncCfg->getFastPU()){
+                        TEncFastPUDecision::setCU(pcCU);
+                        TEncFastPUDecision::setCurrPartIdx(iPartIdx);
+                        TEncFastPUDecision::setRefIdx(iRefIdxTemp);
+                    }
                     xMotionEstimation(pcCU, pcOrgYuv, iPartIdx, eRefPicList, &cMvPred[iRefList][iRefIdxTemp], iRefIdxTemp, cMvTemp[iRefList][iRefIdxTemp], uiBitsTemp, uiCostTemp);
 #endif
                     xCopyAMVPInfo(pcCU->getCUMvField(eRefPicList)->getAMVPInfo(), &aacAMVPInfo[iRefList][iRefIdxTemp]); // must always be done ( also when AMVP_MODE = AM_NONE )
@@ -2520,11 +2520,11 @@ Void TEncSearch::predInterSearch(TComDataCU* pcCU, TComYuv* pcOrgYuv, TComYuv*& 
                         uiBitsTemp += m_auiMVPIdxCost[aaiMvpIdxBi[iRefList][iRefIdxTemp]][AMVP_MAX_NUM_CANDS];
                         // call ME
                         /* TCC: setting current ME step variables to Fast PU class*/
-#if FAST_PU_DECISION
-                        TEncFastPUDecision::setCU(pcCU);
-                        TEncFastPUDecision::setCurrPartIdx(iPartIdx);
-                        TEncFastPUDecision::setRefIdx(iRefIdxTemp);
-#endif
+                        if(m_pcEncCfg->getFastPU()){
+                            TEncFastPUDecision::setCU(pcCU);
+                            TEncFastPUDecision::setCurrPartIdx(iPartIdx);
+                            TEncFastPUDecision::setRefIdx(iRefIdxTemp);
+                        }
                         xMotionEstimation(pcCU, pcOrgYuv, iPartIdx, eRefPicList, &cMvPredBi[iRefList][iRefIdxTemp], iRefIdxTemp, cMvTemp[iRefList][iRefIdxTemp], uiBitsTemp, uiCostTemp, true);
                         if (pcCU->getAMVPMode(uiPartAddr) == AM_EXPL) {
                             xCopyAMVPInfo(&aacAMVPInfo[iRefList][iRefIdxTemp], pcCU->getCUMvField(eRefPicList)->getAMVPInfo());
@@ -3252,12 +3252,12 @@ Void TEncSearch::xMotionEstimation(TComDataCU* pcCU, TComYuv* pcYuvOrg, Int iPar
     }
 
     /* TCC: setting best MV and best Distortion to Fast PU class*/
-#if FAST_PU_DECISION
-    TComMv fpuMv;
-    fpuMv.set(rcMv.getHor(), rcMv.getVer());
-    TEncFastPUDecision::setBestMv(fpuMv);
-    TEncFastPUDecision::setBestDist(ruiCost);
-#endif
+    if(m_pcEncCfg->getFastPU()){
+        TComMv fpuMv;
+        fpuMv.set(rcMv.getHor(), rcMv.getVer());
+        TEncFastPUDecision::setBestMv(fpuMv);
+        TEncFastPUDecision::setBestDist(ruiCost);
+    }
     m_pcRdCost->setCostScale(0);
     rcMv <<= 2;
     rcMv += (cMvHalf <<= 1);
@@ -3336,26 +3336,26 @@ Void TEncSearch::xPatternSearch(TComPattern* pcPatternKey, Pel* piRefY, Int iRef
             uiSad += m_pcRdCost->getCost(x, y);
 
             /* TCC - CALCULATING PREF VECTORS DISTORTIONS FOR PU DECISION */
-#if FAST_PU_DECISION
-            UInt currPart = TEncFastPUDecision::getCurrPartIdx();
-            switch (currPart) {
-                case 1:
-                    if (y == TEncFastPUDecision::bestMv[0].getVer() && x == TEncFastPUDecision::bestMv[0].getHor()) {
-                        TEncFastPUDecision::setPrefDist(0, uiSad);
-                    }
-                case 2:
-                    if (y == TEncFastPUDecision::bestMv[0].getVer() && x == TEncFastPUDecision::bestMv[0].getHor()) {
-                        TEncFastPUDecision::setPrefDist(1, uiSad);
-                    }
-                case 3:
-                    if (y == TEncFastPUDecision::bestMv[1].getVer() && x == TEncFastPUDecision::bestMv[1].getHor()) {
-                        TEncFastPUDecision::setPrefDist(2, uiSad);
-                    }
-                    if (y == TEncFastPUDecision::bestMv[2].getVer() && x == TEncFastPUDecision::bestMv[2].getHor()) {
-                        TEncFastPUDecision::setPrefDist(3, uiSad);
-                    }
+            if(m_pcEncCfg->getFastPU()){
+                UInt currPart = TEncFastPUDecision::getCurrPartIdx();
+                switch (currPart) {
+                    case 1:
+                        if (y == TEncFastPUDecision::bestMv[0].getVer() && x == TEncFastPUDecision::bestMv[0].getHor()) {
+                            TEncFastPUDecision::setPrefDist(0, uiSad);
+                        }
+                    case 2:
+                        if (y == TEncFastPUDecision::bestMv[0].getVer() && x == TEncFastPUDecision::bestMv[0].getHor()) {
+                            TEncFastPUDecision::setPrefDist(1, uiSad);
+                        }
+                    case 3:
+                        if (y == TEncFastPUDecision::bestMv[1].getVer() && x == TEncFastPUDecision::bestMv[1].getHor()) {
+                            TEncFastPUDecision::setPrefDist(2, uiSad);
+                        }
+                        if (y == TEncFastPUDecision::bestMv[2].getVer() && x == TEncFastPUDecision::bestMv[2].getHor()) {
+                            TEncFastPUDecision::setPrefDist(3, uiSad);
+                        }
+                }
             }
-#endif
             if (uiSad < uiSadBest) {
                 uiSadBest = uiSad;
                 iBestX = x;
@@ -3530,12 +3530,11 @@ Void TEncSearch::xTZSearch(TComDataCU* pcCU, TComPattern* pcPatternKey, Pel* piR
     ruiSAD = cStruct.uiBestSad - m_pcRdCost->getCost(cStruct.iBestX, cStruct.iBestY);
 
     /* TCC: setting best match to Fast PU class*/
-#if FAST_PU_DECISION
-    TComMv fpuMv(cStruct.iBestX, cStruct.iBestY);
-    TEncFastPUDecision::setBestMv(fpuMv);
-    TEncFastPUDecision::setBestDist(cStruct.uiBestSad - m_pcRdCost->getCost(cStruct.iBestX, cStruct.iBestY));
-#endif
-
+    if(m_pcEncCfg->getFastPU()){
+        TComMv fpuMv(cStruct.iBestX, cStruct.iBestY);
+        TEncFastPUDecision::setBestMv(fpuMv);
+        TEncFastPUDecision::setBestDist(cStruct.uiBestSad - m_pcRdCost->getCost(cStruct.iBestX, cStruct.iBestY));
+    }
 }
 
 Void TEncSearch::xPatternSearchFracDIF(TComDataCU* pcCU,

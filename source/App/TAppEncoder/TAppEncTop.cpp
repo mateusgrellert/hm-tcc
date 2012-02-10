@@ -186,6 +186,10 @@ Void TAppEncTop::xInitLibCfg()
   m_cTEncTop.setUseBQP                       ( m_bUseBQP      );
 #endif
   m_cTEncTop.setUseFastEnc                   ( m_bUseFastEnc  );
+  //TCC: set fast modes to TEncTop.cpp
+  m_cTEncTop.setFastPU                       ( m_bFastPU  );
+  m_cTEncTop.setFastCU                       ( m_bFastCU  );
+  m_cTEncTop.setFastTU                       ( m_bFastTU  );
 #if EARLY_CU_DETERMINATION
   m_cTEncTop.setUseEarlyCU                   ( m_bUseEarlyCU  ); 
 #endif
