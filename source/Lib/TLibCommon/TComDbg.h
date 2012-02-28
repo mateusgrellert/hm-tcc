@@ -22,11 +22,15 @@ public:
     /* Static Attributes */
     static FILE* dbgFile;
     static bool enableDbg;
+    static int acum;
+    static double calc_num;
 
     /* Static Methods */
     static void openDbgFile(std::string fileName);
     static FILE* getDbgFile();
     static void closeDbgFile();
+    static void incSADCalc();
+    static double getSADCalc();
     static void printDbg(std::string className, const char* str, ...);
     static void print(const char* str, ...);
 

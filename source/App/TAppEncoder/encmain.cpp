@@ -37,6 +37,7 @@
 
 #include <time.h>
 #include "TAppEncTop.h"
+#include "TComDbg.h"
 
 //! \ingroup TAppEncoder
 //! \{
@@ -77,6 +78,7 @@ int main(int argc, char* argv[])
   // ending time
   dResult = (double)(clock()-lBefore) / CLOCKS_PER_SEC;
   printf("\n Total Time: %12.3f sec.\n", dResult);
+  printf("\n #SAD calculations: %12.3f k.\n", TComDbg::getSADCalc());
 
   // destroy application encoder class
   cTAppEncTop.destroy();

@@ -3,3 +3,6 @@ compat/
 doc/
 *.yuv
 *.bin
+*.sh
+*.out
+*.dbg

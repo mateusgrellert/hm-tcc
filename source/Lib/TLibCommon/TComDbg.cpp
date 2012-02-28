@@ -9,6 +9,8 @@
 
 FILE* TComDbg::dbgFile;
 bool TComDbg::enableDbg;
+int TComDbg::acum;
+double TComDbg::calc_num;
 
 TComDbg::TComDbg() {
 }
@@ -53,5 +55,15 @@ void TComDbg::print(const char* str, ...) {
 		fprintf(dbgFile, "%s\n", buffer);
 		va_end(args);
 	}
+}
+
+void TComDbg::incSADCalc(){
+    if(acum == 100){
+        calc_num += 0.1;
+        acum = 0;
+    }
+    else{
+        acum++;
+    }
 }
 

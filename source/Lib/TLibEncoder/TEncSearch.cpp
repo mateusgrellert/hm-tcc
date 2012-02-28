@@ -41,6 +41,7 @@
 #include "TEncSearch.h"
 #include "TEncDefines.h"
 #include "TEncFastPUDecision.h"
+#include "TComDbg.h"
 #include <math.h>
 
 //! \ingroup TLibEncoder
@@ -281,6 +282,7 @@ __inline Void TEncSearch::xTZSearchHelp(TComPattern* pcPatternKey, IntTZSearchSt
 #endif
 
     // distortion
+    TComDbg::incSADCalc();
     uiSad = m_cDistParam.DistFunc(&m_cDistParam);
 
     // motion cost
@@ -661,6 +663,7 @@ UInt TEncSearch::xPatternRefinement(TComPattern* pcPatternKey,
 #endif
 
         m_cDistParam.pCur = piRefPos;
+        TComDbg::incSADCalc();
         uiDist = m_cDistParam.DistFunc(&m_cDistParam);
         uiDist += m_pcRdCost->getCost(cMvTest.getHor(), cMvTest.getVer());
 
@@ -2113,6 +2116,7 @@ Void TEncSearch::xGetInterPredictionError(TComDataCU* pcCU, TComYuv* pcYuvOrg, I
 #else
             iWidth, iHeight, m_pcEncCfg->getUseHADME());
 #endif
+            TComDbg::incSADCalc();
     ruiErr = cDistParam.DistFunc(&cDistParam);
 }
 
@@ -3329,7 +3333,7 @@ Void TEncSearch::xPatternSearch(TComPattern* pcPatternKey, Pel* piRefY, Int iRef
 #if WEIGHT_PRED
             setDistParamComp(0);
 #endif
-
+            TComDbg::incSADCalc();
             uiSad = m_cDistParam.DistFunc(&m_cDistParam);
 
             // motion cost
