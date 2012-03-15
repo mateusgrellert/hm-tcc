@@ -65,7 +65,8 @@ objects/encmain.d.o: \
  /home/mateusgrellert/hm-tcc/build/linux/app/TAppEncoder/../../../../source/Lib/TLibCommon/TComRom.h \
  /home/mateusgrellert/hm-tcc/build/linux/app/TAppEncoder/../../../../source/Lib/TLibEncoder/TEncAnalyze.h \
  /home/mateusgrellert/hm-tcc/build/linux/app/TAppEncoder/../../../../source/App/TAppEncoder/TAppEncCfg.h \
- /home/mateusgrellert/hm-tcc/build/linux/app/TAppEncoder/../../../../source/Lib/TLibEncoder/TEncCfg.h
+ /home/mateusgrellert/hm-tcc/build/linux/app/TAppEncoder/../../../../source/Lib/TLibEncoder/TEncCfg.h \
+ /home/mateusgrellert/hm-tcc/build/linux/app/TAppEncoder/../../../../source/App/TAppEncoder/../../Lib/TLibCommon/TComDbg.h
  /home/mateusgrellert/hm-tcc/build/linux/app/TAppEncoder/../../../../source/App/TAppEncoder/encmain.cpp :
  /home/mateusgrellert/hm-tcc/build/linux/app/TAppEncoder/../../../../source/App/TAppEncoder/TAppEncTop.h :
  /home/mateusgrellert/hm-tcc/build/linux/app/TAppEncoder/../../../../source/Lib/TLibEncoder/TEncTop.h :
@@ -133,3 +134,4 @@ objects/encmain.d.o: \
  /home/mateusgrellert/hm-tcc/build/linux/app/TAppEncoder/../../../../source/Lib/TLibEncoder/TEncAnalyze.h :
  /home/mateusgrellert/hm-tcc/build/linux/app/TAppEncoder/../../../../source/App/TAppEncoder/TAppEncCfg.h :
  /home/mateusgrellert/hm-tcc/build/linux/app/TAppEncoder/../../../../source/Lib/TLibEncoder/TEncCfg.h :
+ /home/mateusgrellert/hm-tcc/build/linux/app/TAppEncoder/../../../../source/App/TAppEncoder/../../Lib/TLibCommon/TComDbg.h :

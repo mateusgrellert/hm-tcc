@@ -844,15 +844,32 @@ Void TEncCu::xCompressCU(TComDataCU*& rpcBestCU, TComDataCU*& rpcTempCU, UInt ui
 
 #else
                     /* FPU: TODO: insert FPU decision modifications below*/
-                    xCheckRDCostInter(rpcBestCU, rpcTempCU, SIZE_2NxnU);
-                    rpcTempCU->initEstData(uiDepth, iQP);
-                    xCheckRDCostInter(rpcBestCU, rpcTempCU, SIZE_2NxnD);
-                    rpcTempCU->initEstData(uiDepth, iQP);
-                    xCheckRDCostInter(rpcBestCU, rpcTempCU, SIZE_nLx2N);
-                    rpcTempCU->initEstData(uiDepth, iQP);
-
-                    xCheckRDCostInter(rpcBestCU, rpcTempCU, SIZE_nRx2N);
-                    rpcTempCU->initEstData(uiDepth, iQP);
+                    if (m_bFastPU && TEncFastPUDecision::partSize == SIZE_2NxnU){
+                        xCheckRDCostInter(rpcBestCU, rpcTempCU, SIZE_2NxnU);
+                        rpcTempCU->initEstData(uiDepth, iQP);
+                    }
+                    if (m_bFastPU && TEncFastPUDecision::partSize == SIZE_2NxnD){
+                        xCheckRDCostInter(rpcBestCU, rpcTempCU, SIZE_2NxnD);
+                        rpcTempCU->initEstData(uiDepth, iQP);
+                    }
+                    if (m_bFastPU && TEncFastPUDecision::partSize == SIZE_nLx2N){
+                        xCheckRDCostInter(rpcBestCU, rpcTempCU, SIZE_nLx2N);
+                        rpcTempCU->initEstData(uiDepth, iQP);
+                    }
+                    if (m_bFastPU && TEncFastPUDecision::partSize == SIZE_nRx2N){
+                        xCheckRDCostInter(rpcBestCU, rpcTempCU, SIZE_nRx2N);
+                        rpcTempCU->initEstData(uiDepth, iQP);
+                    }
+                    else if(!m_bFastPU){
+                        xCheckRDCostInter(rpcBestCU, rpcTempCU, SIZE_2NxnU);
+                        rpcTempCU->initEstData(uiDepth, iQP);
+                        xCheckRDCostInter(rpcBestCU, rpcTempCU, SIZE_2NxnD);
+                        rpcTempCU->initEstData(uiDepth, iQP);
+                        xCheckRDCostInter(rpcBestCU, rpcTempCU, SIZE_nLx2N);
+                        rpcTempCU->initEstData(uiDepth, iQP);
+                        xCheckRDCostInter(rpcBestCU, rpcTempCU, SIZE_nRx2N);
+                        rpcTempCU->initEstData(uiDepth, iQP);
+                    }
 
 #endif
                 }

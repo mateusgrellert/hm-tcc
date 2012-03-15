@@ -74,6 +74,17 @@ PartSize TEncFastPUDecision::approach01() {
 	return SIZE_NxN;
 	 
 }
+/*
+void TEncFastPUDecision::decideMVSimilarity() {
+	if(bestMv[0] == bestMv[1]) setBorderA(true);
+	if(bestMv[0] == bestMv[2]) setBorderB(true);
+	if(bestMv[1] == bestMv[3]) setBorderC(true);
+	if(bestMv[2] == bestMv[3]) setBorderD(true);
+
+	partSize = approach01();
+
+}
+*/
 
 void TEncFastPUDecision::decideMVSimilarity() {
 	if(bestMv[0] == bestMv[1]) setBorderA(true);

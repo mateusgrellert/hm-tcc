@@ -49,7 +49,8 @@ objects/TEncSearch.r.o: \
  /home/mateusgrellert/hm-tcc/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/TEncDefines.h \
  /home/mateusgrellert/hm-tcc/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/TEncFastPUDecision.h \
  /home/mateusgrellert/hm-tcc/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/../TLibCommon/TComMv.h \
- /home/mateusgrellert/hm-tcc/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/../TLibCommon/TComDataCU.h
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/../TLibCommon/TComDataCU.h \
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/../TLibCommon/TComDbg.h
  /home/mateusgrellert/hm-tcc/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/TEncSearch.cpp :
  /home/mateusgrellert/hm-tcc/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TypeDef.h :
  /home/mateusgrellert/hm-tcc/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComRom.h :
@@ -101,3 +102,4 @@ objects/TEncSearch.r.o: \
  /home/mateusgrellert/hm-tcc/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/TEncFastPUDecision.h :
  /home/mateusgrellert/hm-tcc/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/../TLibCommon/TComMv.h :
  /home/mateusgrellert/hm-tcc/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/../TLibCommon/TComDataCU.h :
+ /home/mateusgrellert/hm-tcc/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/../TLibCommon/TComDbg.h :

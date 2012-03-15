@@ -41,7 +41,7 @@
 #include "TEncSearch.h"
 #include "TEncDefines.h"
 #include "TEncFastPUDecision.h"
-#include "TComDbg.h"
+#include "../TLibCommon/TComDbg.h"
 #include <math.h>
 
 //! \ingroup TLibEncoder

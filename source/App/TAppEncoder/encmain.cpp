@@ -37,7 +37,7 @@
 
 #include <time.h>
 #include "TAppEncTop.h"
-#include "TComDbg.h"
+#include "../../Lib/TLibCommon/TComDbg.h"
 
 //! \ingroup TAppEncoder
 //! \{
