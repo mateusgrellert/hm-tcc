@@ -1,8 +1,13 @@
 bin/
 compat/
 doc/
+lib/
 *.yuv
 *.bin
 *.sh
 *.out
 *.dbg
+*.o
+*.a
+*.P
+*.d
