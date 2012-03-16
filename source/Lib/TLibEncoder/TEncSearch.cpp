@@ -44,6 +44,8 @@
 #include "TLibCommon/TComDbg.h"
 #include <math.h>
 
+extern long lMEOpt;
+
 //! \ingroup TLibEncoder
 //! \{
 
@@ -2392,6 +2394,9 @@ Void TEncSearch::predInterSearch(TComDataCU* pcCU, TComYuv* pcOrgYuv, TComYuv*& 
                                 TEncFastPUDecision::setRefIdx(iRefIdxTemp);
                             }
                             xMotionEstimation(pcCU, pcOrgYuv, iPartIdx, eRefPicList, &cMvPred[iRefList][iRefIdxTemp], iRefIdxTemp, cMvTemp[iRefList][iRefIdxTemp], uiBitsTemp, uiCostTemp);
+							if(m_pcEncCfg->getFastPU()) {
+								TEncFastPUDecision::processMVs();
+							}
                         }
                     } else {
                         if (iRefList && pcCU->getSlice()->getNoBackPredFlag()) {
@@ -2405,6 +2410,9 @@ Void TEncSearch::predInterSearch(TComDataCU* pcCU, TComYuv* pcOrgYuv, TComYuv*& 
                                 TEncFastPUDecision::setRefIdx(iRefIdxTemp);
                             }
                             xMotionEstimation(pcCU, pcOrgYuv, iPartIdx, eRefPicList, &cMvPred[iRefList][iRefIdxTemp], iRefIdxTemp, cMvTemp[iRefList][iRefIdxTemp], uiBitsTemp, uiCostTemp);
+							if(m_pcEncCfg->getFastPU()) {
+								TEncFastPUDecision::processMVs();
+							}
                         }
                     }
 #else
@@ -2530,6 +2538,9 @@ Void TEncSearch::predInterSearch(TComDataCU* pcCU, TComYuv* pcOrgYuv, TComYuv*& 
                             TEncFastPUDecision::setRefIdx(iRefIdxTemp);
                         }
                         xMotionEstimation(pcCU, pcOrgYuv, iPartIdx, eRefPicList, &cMvPredBi[iRefList][iRefIdxTemp], iRefIdxTemp, cMvTemp[iRefList][iRefIdxTemp], uiBitsTemp, uiCostTemp, true);
+						if(m_pcEncCfg->getFastPU()) {
+							TEncFastPUDecision::processMVs();
+						}
                         if (pcCU->getAMVPMode(uiPartAddr) == AM_EXPL) {
                             xCopyAMVPInfo(&aacAMVPInfo[iRefList][iRefIdxTemp], pcCU->getCUMvField(eRefPicList)->getAMVPInfo());
                             xCheckBestMVP(pcCU, eRefPicList, cMvTemp[iRefList][iRefIdxTemp], cMvPredBi[iRefList][iRefIdxTemp], aaiMvpIdxBi[iRefList][iRefIdxTemp], uiBitsTemp, uiCostTemp);
@@ -3248,6 +3259,8 @@ Void TEncSearch::xMotionEstimation(TComDataCU* pcCU, TComYuv* pcYuvOrg, Int iPar
         xPatternSearchFast(pcCU, pcPatternKey, piRefY, iRefStride, &cMvSrchRngLT, &cMvSrchRngRB, rcMv, ruiCost);
     }
 
+	
+
     m_pcRdCost->getMotionCost(1, 0);
     m_pcRdCost->setCostScale(1);
 
@@ -3259,8 +3272,8 @@ Void TEncSearch::xMotionEstimation(TComDataCU* pcCU, TComYuv* pcYuvOrg, Int iPar
     if(m_pcEncCfg->getFastPU()){
         TComMv fpuMv;
         fpuMv.set(rcMv.getHor(), rcMv.getVer());
-        TEncFastPUDecision::setBestMv(fpuMv);
-        TEncFastPUDecision::setBestDist(ruiCost);
+        TEncFastPUDecision::setPrefMv(fpuMv);
+        TEncFastPUDecision::setPrefDist(ruiCost);
     }
     m_pcRdCost->setCostScale(0);
     rcMv <<= 2;
