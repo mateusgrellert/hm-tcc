@@ -67,6 +67,6 @@ void TComDbg::incSADCalc(){
     }
 }
 
-double TComDbg::getSADCalc() {
-	return TComDbg::acum;
+double TComDbg::getSADCalc(){
+    return calc_num;
 }

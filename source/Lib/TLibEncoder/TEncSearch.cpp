@@ -42,9 +42,8 @@
 #include "TEncDefines.h"
 #include "TEncFastPUDecision.h"
 #include "TLibCommon/TComDbg.h"
-#include <math.h>
 
-extern long lMEOpt;
+#include <math.h>
 
 //! \ingroup TLibEncoder
 //! \{
