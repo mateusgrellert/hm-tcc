@@ -1,12 +1,16 @@
 import os
 
 videos = [
+'RaceHorsesC.cfg'
+]
+
+"""videos = [
 'BQSquare.cfg',
 'Traffic.cfg',
 'BQTerrace.cfg',
 'RaceHorsesC.cfg',
 'Vidyo1.cfg',
-'ChinaSpeed.cfg']
+'ChinaSpeed.cfg']"""
 
 configs = {
 'Traffic.cfg':['encoder_randomaccess.cfg','encoder_randomaccess_loco.cfg','encoder_randomaccess_10.cfg'],
@@ -50,9 +54,10 @@ for video in videos:
 		fp.write(config + '\n')
 		for app in apps:			
 			print './TAppEncoderStatic -c ../cfg/per-sequence/' + video + ' -c ../cfg/' + config + ' -c ../cfg/tcc/' + app + ' > outHM'
-			os.system('./TAppEncoderStatic -c ../cfg/per-sequence/' + video + ' -c ../cfg/' + config + ' -c ../cfg/tcc/' + app + ' | tee outHM')
+			os.system('./TAppEncoderStatic -c ../cfg/per-sequence/' + video + ' -c ../cfg/' + config + ' -c ../cfg/tcc/' + app + ' --FrameToBeEncoded=10 | tee outHM')
 			fpHM = open('outHM', 'r')
 			fp.write(parseHMResults(fpHM))
 			fpHM.close()
+			os.system('mv '+ app[:-3] + 'dbg ' + app + config + video)
 	fp.close()
 

@@ -24,6 +24,8 @@ public:
     static bool enableDbg;
     static int acum;
     static double calc_num;
+    static std::string *PUMap;
+    static std::string *predMap;
 
     /* Static Methods */
     static void openDbgFile(std::string fileName);
