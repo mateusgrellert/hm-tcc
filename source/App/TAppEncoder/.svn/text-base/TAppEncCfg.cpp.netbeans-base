@@ -138,8 +138,6 @@ Bool TAppEncCfg::parseCfg( Int argc, Char* argv[] )
   string cfg_BitstreamFile;
   string cfg_ReconFile;
   string cfg_dQPFile;
-  string cfg_DbgFile; // TCC: string that stores debug file path
- 
 #if TILES
   string cfg_ColumnWidth;
   string cfg_RowHeight;
@@ -156,11 +154,6 @@ Bool TAppEncCfg::parseCfg( Int argc, Char* argv[] )
   ("InputFile,i",     cfg_InputFile,     string(""), "original YUV input file name")
   ("BitstreamFile,b", cfg_BitstreamFile, string(""), "bitstream output file name")
   ("ReconFile,o",     cfg_ReconFile,     string(""), "reconstructed YUV output file name")
-  /* TCC: Dbg File and Fast modes parsing */
-  ("DbgFile,dbg",    cfg_DbgFile,        string(""), "Debug file path")
-  ("FastPU",     m_uiFastPU,         0u, "Fast PU Decision")
-  ("FastCU",     m_bFastCU,         false, "Fast CU Decision")
-  ("FastTU",     m_bFastTU,         false, "Fast TU Decision")
 #if G678_LAMBDA_ADJUSTMENT
   ("LambdaModifier0,-LM0", m_adLambdaModifier[ 0 ], ( double )1.0, "Lambda modifier for temporal layer 0")
   ("LambdaModifier1,-LM1", m_adLambdaModifier[ 1 ], ( double )1.0, "Lambda modifier for temporal layer 1")
@@ -412,7 +405,6 @@ Bool TAppEncCfg::parseCfg( Int argc, Char* argv[] )
   m_pchBitstreamFile = cfg_BitstreamFile.empty() ? NULL : strdup(cfg_BitstreamFile.c_str());
   m_pchReconFile = cfg_ReconFile.empty() ? NULL : strdup(cfg_ReconFile.c_str());
   m_pchdQPFile = cfg_dQPFile.empty() ? NULL : strdup(cfg_dQPFile.c_str());
-  m_pchDbgFile = cfg_DbgFile.empty() ? NULL : strdup(cfg_DbgFile.c_str()); // TCC: std::string to c string
   
 #if TILES
   m_pchColumnWidth = cfg_ColumnWidth.empty() ? NULL: strdup(cfg_ColumnWidth.c_str());
@@ -973,9 +965,6 @@ Void TAppEncCfg::xPrintParameter()
   printf("Decoding refresh type        : %d\n", m_iDecodingRefreshType );
   printf("QP                           : %5.2f\n", m_fQP );
   printf("Max dQP signaling depth      : %d\n", m_iMaxCuDQPDepth);
-  printf("Fast PU mode                 : %d\n", m_uiFastPU);
-  printf("Fast CU mode                 : %d\n", m_bFastCU);
-  printf("Fast TU mode                 : %d\n", m_bFastTU);
 
 #if G509_CHROMA_QP_OFFSET
   printf("Chroma Qp Offset             : %d\n", m_iChromaQpOffset   );

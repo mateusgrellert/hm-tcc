@@ -44,7 +44,6 @@
 
 #include "TAppEncTop.h"
 #include "TLibEncoder/AnnexBwrite.h"
-#include "TLibCommon/TComDbg.h"
 
 using namespace std;
 
@@ -186,10 +185,6 @@ Void TAppEncTop::xInitLibCfg()
   m_cTEncTop.setUseBQP                       ( m_bUseBQP      );
 #endif
   m_cTEncTop.setUseFastEnc                   ( m_bUseFastEnc  );
-  //TCC: set fast modes to TEncTop.cpp
-  m_cTEncTop.setFastPU                       ( m_uiFastPU  );
-  m_cTEncTop.setFastCU                       ( m_bFastCU  );
-  m_cTEncTop.setFastTU                       ( m_bFastTU  );
 #if EARLY_CU_DETERMINATION
   m_cTEncTop.setUseEarlyCU                   ( m_bUseEarlyCU  ); 
 #endif
@@ -348,11 +343,7 @@ Void TAppEncTop::encode()
 
   TComPicYuv*       pcPicYuvOrg = new TComPicYuv;
   TComPicYuv*       pcPicYuvRec = NULL;
-
-  // TCC: Debug Class initiated
-  TComDbg::enableDbg = true;
-  TComDbg::openDbgFile(m_pchDbgFile);
-
+  
   // initialize internal class & member variables
   xInitLibCfg();
   xCreateLib();

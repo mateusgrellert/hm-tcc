@@ -226,7 +226,7 @@ protected:
 #endif
   Bool      m_bUseFastEnc;
   //TCC: bool variables that enable/disable Fast modes
-  Bool      m_bFastPU;
+  UInt      m_uiFastPU;
   Bool      m_bFastTU;
   Bool      m_bFastCU;
 
@@ -524,11 +524,11 @@ public:
 #endif
   Void      setUseFastEnc                   ( Bool  b )     { m_bUseFastEnc = b; }
   //TCC: fast mode setters/getters
-  Void      setFastPU                       ( Bool  b )     { m_bFastPU = b; }
+  Void      setFastPU                       ( UInt  ui )     { m_uiFastPU = ui; }
   Void      setFastCU                       ( Bool  b )     { m_bFastCU = b; }
   Void      setFastTU                       ( Bool  b )     { m_bFastTU = b; }
   
-  bool      getFastPU                       ( )     { return m_bFastPU; }
+  UInt      getFastPU                       ( )     { return m_uiFastPU; }
   bool      getFastCU                       ( )     { return m_bFastCU; }
   bool      getFastTU                       ( )     { return m_bFastTU; }
 

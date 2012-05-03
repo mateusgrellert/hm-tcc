@@ -1,7 +1,7 @@
 import os
 
 videos = [
-'RaceHorsesC.cfg'
+'BQSquare.cfg'
 ]
 
 """videos = [
@@ -22,14 +22,17 @@ configs = {
 }
 
 apps = [
-'rdo-22.cfg',
-'rdo-27.cfg',
-'rdo-32.cfg',
-'rdo-37.cfg',
-'fast-22.cfg',
-'fast-27.cfg',
-'fast-32.cfg',
-'fast-37.cfg',
+'qp22.cfg',
+'qp27.cfg',
+'qp32.cfg',
+'qp37.cfg'
+]
+
+modes = [
+'SMP-only',
+'AMP-low',
+'AMP-high',
+'RDO'
 ]
 
 def parseHMResults(fp):
@@ -49,15 +52,16 @@ def parseHMResults(fp):
 	
 
 for video in videos:
-	fp = open(video[:-4] + '.results', 'w')
+	fp = open(video[:-4] + '.csv', 'w')
 	for config in configs[video]:
 		fp.write(config + '\n')
-		for app in apps:			
-			print './TAppEncoderStatic -c ../cfg/per-sequence/' + video + ' -c ../cfg/' + config + ' -c ../cfg/tcc/' + app + ' > outHM'
-			os.system('./TAppEncoderStatic -c ../cfg/per-sequence/' + video + ' -c ../cfg/' + config + ' -c ../cfg/tcc/' + app + ' --FrameToBeEncoded=10 | tee outHM')
-			fpHM = open('outHM', 'r')
-			fp.write(parseHMResults(fpHM))
-			fpHM.close()
-			os.system('mv '+ app[:-3] + 'dbg ' + app + config + video)
+		for mode in modes:
+			for app in apps:			
+				print './TAppEncoderStatic -c ../cfg/per-sequence/' + video + ' -c ../cfg/' + config + ' -c ../cfg/tcc/' + app + ' > outHM'
+				os.system('./TAppEncoderStatic -c ../cfg/per-sequence/' + video + ' -c ../cfg/' + config + ' -c ../cfg/tcc/' + mode + app + ' --FrameToBeEncoded=20 | tee outHM')
+				fpHM = open('outHM', 'r')
+				fp.write(parseHMResults(fpHM))
+				fpHM.close()
+				os.system('mv *.dbg ' + video + config + mode + app + '.csv')
 	fp.close()
 

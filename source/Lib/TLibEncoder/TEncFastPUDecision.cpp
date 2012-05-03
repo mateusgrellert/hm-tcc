@@ -39,7 +39,7 @@ void TEncFastPUDecision::init() {
 	partSizeAMP = SIZE_NONE;
 	fastMode = true;
 	for (int i = 0; i < 4; i++) {
-		bestDist[i] = MAX_UINT;
+		bestDist[i] = MAX_UINT;                  
 	}
 
 }

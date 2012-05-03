@@ -99,7 +99,7 @@ private:
   TEncSbac*               m_pcRDGoOnSbacCoder;
   Bool                    m_bUseSBACRD;
   //TCC: once again the enablers
-  Bool                    m_bFastPU;
+  UInt                    m_uiFastPU;
   Bool                    m_bFastCU;
   Bool                    m_bFastTU;
   

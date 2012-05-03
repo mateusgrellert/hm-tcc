@@ -59,7 +59,6 @@ protected:
   char*     m_pchInputFile;                                   ///< source file name
   char*     m_pchBitstreamFile;                               ///< output bitstream file
   char*     m_pchReconFile;                                   ///< output reconstruction file
-  char*     m_pchDbgFile;                                     ///< TCC: output debug file
 #if G678_LAMBDA_ADJUSTMENT  
   Double    m_adLambdaModifier[ MAX_TLAYER ];                 ///< Lambda modifier array for each temporal layer
 #endif
@@ -71,10 +70,7 @@ protected:
   Int       m_iFrameToBeEncoded;                              ///< number of encoded frames
   Bool      m_bUsePAD;                                        ///< flag for using source padding
   Int       m_aiPad[2];                                       ///< number of padded pixels for width and height
-  // TCC: Fast mode enablers
-  UInt m_uiFastPU;
-  bool m_bFastCU;
-  bool m_bFastTU; 
+  
   // coding structure
   Int       m_iIntraPeriod;                                   ///< period of I-slice (random access period)
   Int       m_iDecodingRefreshType;                           ///< random access type

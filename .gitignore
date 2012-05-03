@@ -12,3 +12,5 @@ lib/
 *.P
 *.d
 .DS_Store
+/nbproject/private/
+nbproject/
