@@ -11,3 +11,4 @@ lib/
 *.a
 *.P
 *.d
+.DS_Store
