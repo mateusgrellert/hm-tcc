@@ -53,15 +53,18 @@ def parseHMResults(fp):
 
 for video in videos:
 	fp = open(video[:-4] + '.csv', 'w')
+	print 'Video: '+ video[:-4]
 	for config in configs[video]:
 		fp.write(config + '\n')
+		print '\t'+ config,
 		for mode in modes:
+			print ' ' + mode,
 			for app in apps:			
-				print './TAppEncoderStatic -c ../cfg/per-sequence/' + video + ' -c ../cfg/' + config + ' -c ../cfg/tcc/' + app + ' > outHM'
-				os.system('./TAppEncoderStatic -c ../cfg/per-sequence/' + video + ' -c ../cfg/' + config + ' -c ../cfg/tcc/' + mode + app + ' --FrameToBeEncoded=20 | tee outHM')
+				print ' ' + app
+				os.system('./TAppEncoderStatic -c ../cfg/per-sequence/' + video + ' -c ../cfg/' + config + ' -c ../cfg/tcc/' + mode + '/' + app + ' --FrameToBeEncoded=16 > outHM')
 				fpHM = open('outHM', 'r')
 				fp.write(parseHMResults(fpHM))
 				fpHM.close()
-				os.system('mv *.dbg ' + video + config + mode + app + '.csv')
+				os.system('mv *.dbg ' + video[:-4] + config[:-4] + mode + app[:-4] + '.csv')
 	fp.close()
 
