@@ -260,7 +260,7 @@ namespace df
       if (!found)
       {
         /* not found */
-        cerr << "Unknown option: `" << name << "' (value:`" << value << "')" << endl;
+        cout << "Unknown option: `" << name << "' (value:`" << value << "')" << endl;
         return false;
       }
 
