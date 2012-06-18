@@ -1,16 +1,15 @@
 import os
 
-videos = [
-'BQSquare.cfg'
-]
+nFrames = 60
 
-"""videos = [
+videos = [
 'BQSquare.cfg',
 'Traffic.cfg',
 'BQTerrace.cfg',
 'RaceHorsesC.cfg',
 'Vidyo1.cfg',
-'ChinaSpeed.cfg']"""
+'ChinaSpeed.cfg'
+]
 
 configs = {
 'Traffic.cfg':['encoder_randomaccess.cfg','encoder_randomaccess_loco.cfg','encoder_randomaccess_10.cfg'],
@@ -52,19 +51,19 @@ def parseHMResults(fp):
 	
 
 for video in videos:
-	fp = open(video[:-4] + '.csv', 'w')
+	fp = open(video[:-4] + '.csv', 'a')
 	print 'Video: '+ video[:-4]
 	for config in configs[video]:
 		fp.write(config + '\n')
-		print '\t'+ config,
 		for mode in modes:
-			print ' ' + mode,
+			if ((config in ['encoder_randomaccess_loco.cfg','encoder_lowdelay_loco.cfg') and (mode in ['AMP-low','AMP-high'])): #skipping AMP modes for _loco configs
+				continue
 			for app in apps:			
-				print ' ' + app
-				os.system('./TAppEncoderStatic -c ../cfg/per-sequence/' + video + ' -c ../cfg/' + config + ' -c ../cfg/tcc/' + mode + '/' + app + ' --FrameToBeEncoded=16 > outHM')
+				print '\t'+ config + ' ' + mode + ' '+  app
+				os.system('./TAppEncoderStatic -c ../cfg/per-sequence/' + video + ' -c ../cfg/' + config + ' -c ../cfg/tcc/' + mode + '/' + app + ' --FrameToBeEncoded=' + nFrames + ' > outHM')
 				fpHM = open('outHM', 'r')
 				fp.write(parseHMResults(fpHM))
 				fpHM.close()
-				os.system('mv *.dbg ' + video[:-4] + config[:-4] + mode + app[:-4] + '.csv')
+				os.system('mv *.dbg modes_depths/' + video[:-4] + '_' + config[:-4] + '_' + mode + '_' + app[:-4] + '.csv')
 	fp.close()
 
