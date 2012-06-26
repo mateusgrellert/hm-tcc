@@ -40,7 +40,8 @@ def parseFile(fin,fouts):
 
 
 qps = ['22', '27', '32', '37']
-decisions = ['AMP-high','AMP-low','SMP-only','RDO']
+decisions = ['RDO']
+#decisions = ['AMP-high','AMP-low','SMP-only','RDO']
 videos = ['BQSquare','BQTerrace','ChinaSpeed','RaceHorsesC','Vidyo1','Traffic']
 modes = {
 'Traffic':['encoder_randomaccess','encoder_randomaccess_loco','encoder_randomaccess_10'],
