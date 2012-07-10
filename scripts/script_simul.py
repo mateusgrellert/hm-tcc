@@ -56,7 +56,7 @@ for video in videos:
 	for config in configs[video]:
 		fp.write(config + '\n')
 		for mode in modes:
-			if ((config in ['encoder_randomaccess_loco.cfg','encoder_lowdelay_loco.cfg') and (mode in ['AMP-low','AMP-high'])): #skipping AMP modes for _loco configs
+			if ((config in ['encoder_randomaccess_loco.cfg','encoder_lowdelay_loco.cfg'])  and (mode in ['AMP-low','AMP-high'])): #skipping AMP modes for _loco configs
 				continue
 			for app in apps:			
 				print '\t'+ config + ' ' + mode + ' '+  app

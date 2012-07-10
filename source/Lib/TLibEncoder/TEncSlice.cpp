@@ -38,6 +38,8 @@
 #include "TEncTop.h"
 #include "TEncSlice.h"
 #include <math.h>
+#include "../TLibCommon/TComDbg.h"
+
 
 //! \ingroup TLibEncoder
 //! \{
@@ -1079,7 +1081,7 @@ Void TEncSlice::compressSlice( TComPic*& rpcPic )
 #endif
       // run CU encoder
       m_pcCuEncoder->compressCU( pcCU );
-      
+     
       // restore entropy coder to an initial stage
       m_pcEntropyCoder->setEntropyCoder ( m_pppcRDSbacCoder[0][CI_CURR_BEST], pcSlice );
 #if OL_USE_WPP

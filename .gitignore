@@ -1,4 +1,4 @@
-bin/
+bin*
 compat/
 doc/
 lib/
@@ -15,3 +15,8 @@ lib/
 /nbproject/private/
 nbproject/
 *~
+modes_depths/
+*.csv
+*.zip
+*.xls
+

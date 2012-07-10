@@ -1117,14 +1117,6 @@ Void TEncCu::xCompressCU(TComDataCU*& rpcBestCU, TComDataCU*& rpcTempCU, UInt ui
     assert(rpcBestCU->getPartitionSize(0) != SIZE_NONE);
     assert(rpcBestCU->getPredictionMode(0) != MODE_NONE);
     assert(rpcBestCU->getTotalCost() != MAX_DOUBLE);
-
-    // TCC: SOME DEBUGGING PRINTING
-    if (rpcBestCU->getPredictionMode(0) == MODE_INTER)
-        TComDbg::print("INTER %d %d", rpcBestCU->getDepth(0),rpcBestCU->getPartitionSize(0));
-    if (rpcBestCU->getPredictionMode(0) == MODE_INTRA)
-        TComDbg::print("INTRA %d %d", rpcBestCU->getDepth(0),rpcBestCU->getPartitionSize(0));
-    if (rpcBestCU->getPredictionMode(0) == MODE_SKIP)
-        TComDbg::print("SKIP %d %d", rpcBestCU->getDepth(0),rpcBestCU->getPartitionSize(0));
 }
 
 #if FINE_GRANULARITY_SLICES
@@ -1378,7 +1370,12 @@ Void TEncCu::xEncodeCU(TComDataCU* pcCU, UInt uiAbsPartIdx, UInt uiDepth) {
             return;
         }
     }
-
+    if (pcCU->getPredictionMode(uiAbsPartIdx) == MODE_INTER)
+        TComDbg::print("INTER %d %d", pcCU->getDepth(uiAbsPartIdx),pcCU->getPartitionSize(uiAbsPartIdx));
+    if (pcCU->getPredictionMode(uiAbsPartIdx) == MODE_INTRA)
+        TComDbg::print("INTRA %d %d", pcCU->getDepth(uiAbsPartIdx),pcCU->getPartitionSize(uiAbsPartIdx));
+    if (pcCU->getPredictionMode(uiAbsPartIdx) == MODE_SKIP)
+        TComDbg::print("SKIP %d %d", pcCU->getDepth(uiAbsPartIdx),pcCU->getPartitionSize(uiAbsPartIdx));
     // prediction Info ( Intra : direction mode, Inter : Mv, reference idx )
     m_pcEntropyCoder->encodePredInfo(pcCU, uiAbsPartIdx);
 
