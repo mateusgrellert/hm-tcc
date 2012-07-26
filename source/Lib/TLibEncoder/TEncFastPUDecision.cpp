@@ -15,9 +15,11 @@ Bool TEncFastPUDecision::borderA;
 Bool TEncFastPUDecision::borderB;
 Bool TEncFastPUDecision::borderC;
 Bool TEncFastPUDecision::borderD;
-PartSize TEncFastPUDecision::partSize;
-PartSize TEncFastPUDecision::partSizeAMP;
+PartSize TEncFastPUDecision::testSMP;
+PartSize TEncFastPUDecision::testAMP;
 UInt TEncFastPUDecision::currPartIdx;
+UInt TEncFastPUDecision::currDepth;
+UInt TEncFastPUDecision::fastPU;
 const PredMode TEncFastPUDecision::predMode;
 TComDataCU* TEncFastPUDecision::cu;
 std::vector<UInt**> TEncFastPUDecision::distMap;
@@ -35,77 +37,30 @@ void TEncFastPUDecision::init() {
     borderD = false;
     currPartIdx = 0;
     cu = NULL;
-	partSize = SIZE_NONE;
-	partSizeAMP = SIZE_NONE;
-	fastMode = true;
-	for (int i = 0; i < 4; i++) {
-		bestDist[i] = MAX_UINT;                  
-	}
+    fastMode = true;
+    for (int i = 0; i < 4; i++) {
+        testSMP[i] = false;
+        testAMP[i+4] = false;
+        bestDist[i] = MAX_UINT;                  
+    }
 
 }
 
-std::string TEncFastPUDecision::report() {
-	std::string returnable;
-	std::string partitions[] = {"2Nx2N","2NxN","Nx2N","NxN","2NxnU","2NxnD","nLx2N","nRx2N","","","","","","","NONE"};
-	char str[50];
-	
-	
-	/*for(int i=0; i<4; i++) {
-		sprintf(str, "MV %d - (%d %d) - %d - %d\n ", i, bestMv[i].getHor(), bestMv[i].getVer(), bestDist[i], prefDist[i]);
-		std::string cppStr(str);
-		returnable += cppStr;
-	}*/
-
-	//returnable += "Dec. #1: ";
-	returnable += (borderA) ? "1" : "0";
-	returnable += (borderB) ? "1" : "0";
-	returnable += (borderC) ? "1" : "0";
-	returnable += (borderD) ? "1" : "0";
-
-	returnable += " " + partitions[partSize] + " ";
-
-	sprintf(str,"%d ", bestRefIdx);
-	returnable.append(str);
-
-	if(cuSize != 8) {
-		for (int i = 0; i < 4; i++) {
-			sprintf(str,"%d ", bs[i]);
-			returnable.append(str);
-		}
-		returnable += partitions[partSizeAMP];
-	}
-
-	returnable += "\n";
-
-	return returnable;
-}
-
-PartSize TEncFastPUDecision::approach01() {
+void TEncFastPUDecision::motionVectorMerge() {
 	bool a = borderA;
 	bool b = borderB;
 	bool c = borderC;
 	bool d = borderD;
 
 	if( (a&&b)||(b&&d)||(a&&c)||(c&&d) ) 
-		return SIZE_2Nx2N;
-	if (a || d)
-		return SIZE_2NxN;
-	if (b || c)
-		return SIZE_Nx2N;
-	return SIZE_NxN;
+		testSMP[SIZE_2Nx2N] = true;
+        else if (a || d)
+		testSMP[SIZE_2NxN] = true;
+        else if (b || c)
+		testSMP[SIZE_Nx2N] = true;
+        else testSMP[SIZE_NxN] = true;
 	 
 }
-/*
-void TEncFastPUDecision::decideMVSimilarity() {
-	if(bestMv[0] == bestMv[1]) setBorderA(true);
-	if(bestMv[0] == bestMv[2]) setBorderB(true);
-	if(bestMv[1] == bestMv[3]) setBorderC(true);
-	if(bestMv[2] == bestMv[3]) setBorderD(true);
-
-	partSize = approach01();
-
-}
-*/
 
 void TEncFastPUDecision::decideMVSimilarity() {
 	if(bestMv[0] == bestMv[1]) setBorderA(true);
@@ -113,7 +68,7 @@ void TEncFastPUDecision::decideMVSimilarity() {
 	if(bestMv[1] == bestMv[3]) setBorderC(true);
 	if(bestMv[2] == bestMv[3]) setBorderD(true);
 
-	partSize = approach01();
+	motionVectorMerge();
 
 }
 
@@ -155,7 +110,7 @@ void TEncFastPUDecision::performBordersTests() {
 	bs[3] = xTestVerBorders(cuOrg + (cuSize/2));
 }
 
-void TEncFastPUDecision::decideAMPBorders() {
+void TEncFastPUDecision::borderStrengthDecision() {
 
 	performBordersTests();
 
@@ -176,10 +131,14 @@ void TEncFastPUDecision::decideAMPBorders() {
 		}
 	}
 	
-	partSizeAMP = (idBest == 0) ? SIZE_2NxnU :
-				  (idBest == 1) ? SIZE_2NxnD :
-				  (idBest == 2) ? SIZE_nLx2N :
-								  SIZE_nRx2N;
+        if((currDepth == 1 || currDepth == 2) && fastPU == 3){
+            for (int i = 0; i < 4; i++){
+                testAMP[i] = true;
+            }
+            return;
+        }
+        
+        testAMP[idBest+4] == true;
 	
 }
 

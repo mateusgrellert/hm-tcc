@@ -12,8 +12,9 @@ public:
     static TComMv bestMv[4], prefMv[4]; //Se vamos usar vector, temos que resolver BAD_ACCESS da indexacao direta
     static UInt bestDist[4], prefDist[4];
     static Bool borderA, borderB, borderC, borderD;
-    static PartSize partSize, partSizeAMP;
-    static UInt currPartIdx;
+    static Bool testSMP[4], testAMP[8];
+    static UInt currPartIdx,currDepth;
+    static UInt fastPU;
     static Int refFrameIdx;
     static const PredMode predMode = MODE_INTER;
     static TComDataCU *cu;
@@ -30,22 +31,24 @@ public:
     /* Fast PU Decision Methods */
     static void init();
     static void decideMVSimilarity();
-    static PartSize approach01();
-    static PartSize approach02();
+    static void motionVectorMerge();
     static void processMVs();
 
     static UInt xTestHorBorders(Pel* p);
     static UInt xTestVerBorders(Pel* p);
     static void performBordersTests();
-    static void decideAMPBorders();
+    static void borderStrengthDecision();
 
     static void xSetCUParameters();
     static std::string report();
         
     static void        setCU               (TComDataCU *pCu)           { cu = pCu; }
+    static void        setFastPU           (UInt fpu)                  { fastPU = fpu; }
     static TComDataCU* getCU               ()                          { return cu; }
 
     static void        setCurrPartIdx      (UInt idx)                  { currPartIdx = idx; }
+    static void        setCurrDepth        (UInt depth)                  { currDepth = depth; }
+
     static UInt        getCurrPartIdx      ()                          { return currPartIdx; }
 
 
