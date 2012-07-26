@@ -1327,7 +1327,12 @@ Void TEncCu::xEncodeCU(TComDataCU* pcCU, UInt uiAbsPartIdx, UInt uiDepth) {
         }
         return;
     }
-
+    if (pcCU->getPredictionMode(uiAbsPartIdx) == MODE_INTER)
+        TComDbg::print("INTER %d %d", pcCU->getDepth(uiAbsPartIdx),pcCU->getPartitionSize(uiAbsPartIdx));
+    if (pcCU->getPredictionMode(uiAbsPartIdx) == MODE_INTRA)
+        TComDbg::print("INTRA %d %d", pcCU->getDepth(uiAbsPartIdx),pcCU->getPartitionSize(uiAbsPartIdx));
+    if (pcCU->getPredictionMode(uiAbsPartIdx) == MODE_SKIP)
+        TComDbg::print("SKIP %d %d", pcCU->getDepth(uiAbsPartIdx),pcCU->getPartitionSize(uiAbsPartIdx));
 #if G507_QP_ISSUE_FIX
     if ((g_uiMaxCUWidth >> uiDepth) >= pcCU->getSlice()->getPPS()->getMinCuDQPSize() && pcCU->getSlice()->getPPS()->getUseDQP())
 #else
@@ -1370,12 +1375,7 @@ Void TEncCu::xEncodeCU(TComDataCU* pcCU, UInt uiAbsPartIdx, UInt uiDepth) {
             return;
         }
     }
-    if (pcCU->getPredictionMode(uiAbsPartIdx) == MODE_INTER)
-        TComDbg::print("INTER %d %d", pcCU->getDepth(uiAbsPartIdx),pcCU->getPartitionSize(uiAbsPartIdx));
-    if (pcCU->getPredictionMode(uiAbsPartIdx) == MODE_INTRA)
-        TComDbg::print("INTRA %d %d", pcCU->getDepth(uiAbsPartIdx),pcCU->getPartitionSize(uiAbsPartIdx));
-    if (pcCU->getPredictionMode(uiAbsPartIdx) == MODE_SKIP)
-        TComDbg::print("SKIP %d %d", pcCU->getDepth(uiAbsPartIdx),pcCU->getPartitionSize(uiAbsPartIdx));
+
     // prediction Info ( Intra : direction mode, Inter : Mv, reference idx )
     m_pcEntropyCoder->encodePredInfo(pcCU, uiAbsPartIdx);
 

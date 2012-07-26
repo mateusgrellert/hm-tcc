@@ -33,9 +33,9 @@ def parseFile(fin,fouts):
 			print >> fouts[0],c,
 		print >> fouts[0],"\n",
 		i += 1
-	print >> fouts[1], modes_acc['INTRA'], modes_acc['INTER'],modes_acc['SKIP']
-	print >> fouts[2], sizes_acc['0'], sizes_acc['1'],sizes_acc['2'], sizes_acc['3']
-	print >> fouts[3], partitions_acc['0'], partitions_acc['1'],partitions_acc['2'], partitions_acc['3'], partitions_acc['4'],partitions_acc['5'],partitions_acc['6'],partitions_acc['7']
+	print >> fouts[1], modes_acc['INTRA'], ";",modes_acc['INTER'],";",modes_acc['SKIP']
+	print >> fouts[2], sizes_acc['0'], ";",sizes_acc['1'],";",sizes_acc['2'], ";",sizes_acc['3']
+	print >> fouts[3], partitions_acc['0'], ";",partitions_acc['1'],";",partitions_acc['2'], partitions_acc['3'],";", partitions_acc['4'],";",partitions_acc['5'],";",partitions_acc['6'],";",partitions_acc['7']
 
 
 
